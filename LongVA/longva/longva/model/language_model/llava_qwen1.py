@@ -12,24 +12,18 @@
 #    See the License for the specific language governing permissions and
 #    limitations under the License.
 
-
 from typing import List, Optional, Tuple, Union, Dict
 import torch
 import torch.nn as nn
-from torch.nn import CrossEntropyLoss
 
 import transformers
 from transformers import AutoConfig, AutoModelForCausalLM, LlamaConfig, LlamaModel, LlamaForCausalLM
-
 from transformers.modeling_outputs import CausalLMOutputWithPast
 from transformers.generation.utils import GenerateOutput
 
-# from ...constants import IGNORE_INDEX, IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN
+# 假定相关常量和辅助函数已在其它模块中定义
 from longva.model.llava_arch import LlavaMetaModel, LlavaMetaForCausalLM
-from source.modeling_qwen2 import Qwen2ForCausalLM, Qwen2Model, Qwen2Config
-
-# from .qwen.modeling_qwen import QWenLMHeadModel, QWenModel
-# from .qwen.configuration_qwen import QWenConfig
+from transformers import Qwen2Config, Qwen2Model, Qwen2ForCausalLM
 
 
 class LlavaQwenConfig(Qwen2Config):
@@ -47,7 +41,7 @@ class LlavaQwenForCausalLM(Qwen2ForCausalLM, LlavaMetaForCausalLM):
     config_class = LlavaQwenConfig
 
     def __init__(self, config):
-        # super(Qwen2ForCausalLM, self).__init__(config)
+        # 调用 Qwen2ForCausalLM 的初始化
         Qwen2ForCausalLM.__init__(self, config)
         config.model_type = "llava_qwen"
         config.rope_scaling = None
@@ -76,14 +70,31 @@ class LlavaQwenForCausalLM(Qwen2ForCausalLM, LlavaMetaForCausalLM):
         return_dict: Optional[bool] = None,
         modalities: Optional[List[str]] = ["image"],
         attn_mode: Optional[str] = None,
-        dpo_forward: Optional[bool] = False,
+        # dpo_forward 参数已不再使用
         cache_position=None,
     ) -> Union[Tuple, CausalLMOutputWithPast]:
 
         if inputs_embeds is None:
-            (input_ids, position_ids, attention_mask, past_key_values, inputs_embeds, labels) = self.prepare_inputs_labels_for_multimodal(input_ids, position_ids, attention_mask, past_key_values, labels, images, modalities, image_sizes)
+            (
+                input_ids, 
+                position_ids, 
+                attention_mask, 
+                past_key_values, 
+                inputs_embeds, 
+                labels
+            ) = self.prepare_inputs_labels_for_multimodal(
+                input_ids, 
+                position_ids, 
+                attention_mask, 
+                past_key_values, 
+                labels, 
+                images, 
+                modalities, 
+                image_sizes
+            )
 
-        if dpo_forward:
+        # 如果 attn_mode 不为 None，则调用自定义分支，传入该参数
+        if attn_mode is not None:
             outputs = self.model(
                 input_ids=input_ids,
                 attention_mask=attention_mask,
@@ -94,15 +105,22 @@ class LlavaQwenForCausalLM(Qwen2ForCausalLM, LlavaMetaForCausalLM):
                 output_attentions=output_attentions,
                 output_hidden_states=output_hidden_states,
                 return_dict=return_dict,
+                attn_mode=attn_mode
             )
-
             hidden_states = outputs[0]
             logits = self.lm_head(hidden_states)
-            return logits, labels
-
+            if return_dict:
+                return CausalLMOutputWithPast(
+                    logits=logits,
+                    past_key_values=outputs.past_key_values,
+                    hidden_states=outputs.hidden_states,
+                    attentions=outputs.attentions,
+                )
+            else:
+                return (logits, outputs.past_key_values, outputs.hidden_states, outputs.attentions)
         else:
-            return Qwen2ForCausalLM.forward(
-                self,
+            # 否则直接调用父类 forward（不传 attn_mode）
+            return super().forward(
                 input_ids=input_ids,
                 attention_mask=attention_mask,
                 position_ids=position_ids,
@@ -112,8 +130,7 @@ class LlavaQwenForCausalLM(Qwen2ForCausalLM, LlavaMetaForCausalLM):
                 use_cache=use_cache,
                 output_attentions=output_attentions,
                 output_hidden_states=output_hidden_states,
-                return_dict=return_dict,
-                attn_mode=attn_mode
+                return_dict=return_dict
             )
 
     @torch.no_grad()
@@ -129,18 +146,42 @@ class LlavaQwenForCausalLM(Qwen2ForCausalLM, LlavaMetaForCausalLM):
         attention_mask = kwargs.pop("attention_mask", None)
         if "inputs_embeds" in kwargs:
             raise NotImplementedError("`inputs_embeds` is not supported")
-
         if images is not None:
-            (inputs, position_ids, attention_mask, _, inputs_embeds, _) = self.prepare_inputs_labels_for_multimodal(inputs, position_ids, attention_mask, None, None, images, modalities, image_sizes=image_sizes)
+            (
+                inputs, 
+                position_ids, 
+                attention_mask, 
+                _, 
+                inputs_embeds, 
+                _
+            ) = self.prepare_inputs_labels_for_multimodal(
+                inputs, 
+                position_ids, 
+                attention_mask, 
+                None, 
+                None, 
+                images, 
+                modalities, 
+                image_sizes=image_sizes
+            )
         else:
             inputs_embeds = self.get_model().embed_tokens(inputs)
-
-        return super().generate(position_ids=position_ids, attention_mask=attention_mask, inputs_embeds=inputs_embeds, **kwargs)
+        return super().generate(
+            position_ids=position_ids, 
+            attention_mask=attention_mask, 
+            inputs_embeds=inputs_embeds, 
+            **kwargs
+        )
 
     def prepare_inputs_for_generation(self, input_ids, past_key_values=None, inputs_embeds=None, **kwargs):
         images = kwargs.pop("images", None)
         image_sizes = kwargs.pop("image_sizes", None)
-        inputs = super().prepare_inputs_for_generation(input_ids, past_key_values=past_key_values, inputs_embeds=inputs_embeds, **kwargs)
+        inputs = super().prepare_inputs_for_generation(
+            input_ids, 
+            past_key_values=past_key_values, 
+            inputs_embeds=inputs_embeds, 
+            **kwargs
+        )
         if images is not None:
             inputs["images"] = images
         if image_sizes is not None:

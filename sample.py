@@ -14,11 +14,13 @@ torch.manual_seed(0)
 model_path = "lmms-lab/LongVA-7B-DPO"
 
 images_and_bboxes = [
-    ["target.JPG", (1000, 2270, 2357, 2802)],
     ["image1.JPG", None],
+    ["image3.JPG", None],
+    ["image2.JPG", (1000, 2270, 2357, 2802)],
+    ["target.JPG", None],
 ]
-question = "What is the main object in the lower part of the first picture?"
-needle = "car"
+question = "What animal is lying on the grass?"
+needle = "cat"
 
 # === 模型加载 ===
 tokenizer, model, image_processor, _ = load_pretrained_model(model_path, None, "llava_qwen", device_map="cuda")
@@ -63,29 +65,63 @@ total_seq_len = hidden_states.shape[1]
 print(f"\n🟢 模型实际输入 embedding 序列长度（text + vision token 总长度）: {total_seq_len}")
 print(f"🟢 hidden_states shape: {hidden_states.shape}")
 
-num_image_patches = model.get_vision_tower().num_patches_per_side ** 2
-num_image_tokens = num_image_patches * len(images)
+# num_image_patches = model.get_vision_tower().num_patches_per_side ** 2
+# num_image_tokens = num_image_patches * len(images)
+# text_token_len = total_seq_len - num_image_tokens
+# print(f"🟢 图片对应的视觉 token 数量（含所有图片）: {num_image_tokens}")
+# print(f"🟢 文本 token 数量: {text_token_len}")
+# print(f"🟢 图片视觉 token 在 embedding 中的范围: [{text_token_len}, {total_seq_len - 1}]")
+
+# # ✅ 获取带 bbox 图片的视觉 token 范围
+# def compute_selected_token_ranges_from_output(hidden_states, bbox_idx, num_images, num_patches_per_image):
+#     total_seq_len = hidden_states.shape[1]
+#     text_token_len = total_seq_len - num_patches_per_image * num_images
+#     token_start = text_token_len + bbox_idx * num_patches_per_image
+#     token_end = token_start + num_patches_per_image
+#     return [(bbox_idx, token_start, token_end)], text_token_len, total_seq_len
+
+# # 🔍 找到带 bbox 的图片索引
+# bbox_idx = next((i for i, (_, bbox) in enumerate(images_and_bboxes) if bbox is not None), None)
+# assert bbox_idx is not None, "必须提供带有 bbox 的图片"
+
+# selected_token_ranges, text_token_len, total_seq_len = compute_selected_token_ranges_from_output(
+#     hidden_states, bbox_idx, len(images), num_image_patches
+# )
+# print(f"✅ 使用带有 bbox 的图片的视觉 token 范围 (Attention Index)：{selected_token_ranges}")
+
+num_patches_per_grid = vision_tower.num_patches_per_side ** 2
+
+# === 精确计算每张图片对应的视觉 token 数量 ===
+grids_per_image_list = []
+for img in images:
+    patches_tensor = process_images([img], image_processor, model.config)
+    grids_per_image_list.append(patches_tensor.shape[0])
+
+tokens_per_image_list = [g * num_patches_per_grid for g in grids_per_image_list]
+
+# === 计算文本 token 长度 ===
+num_image_tokens = sum(tokens_per_image_list)
 text_token_len = total_seq_len - num_image_tokens
-print(f"🟢 图片对应的视觉 token 数量（含所有图片）: {num_image_tokens}")
+
+print(f"🟢 图片对应的视觉 token 总数量（所有图片）: {num_image_tokens}")
 print(f"🟢 文本 token 数量: {text_token_len}")
 print(f"🟢 图片视觉 token 在 embedding 中的范围: [{text_token_len}, {total_seq_len - 1}]")
 
-# ✅ 获取带 bbox 图片的视觉 token 范围
-def compute_selected_token_ranges_from_output(hidden_states, bbox_idx, num_images, num_patches_per_image):
-    total_seq_len = hidden_states.shape[1]
-    text_token_len = total_seq_len - num_patches_per_image * num_images
-    token_start = text_token_len + bbox_idx * num_patches_per_image
-    token_end = token_start + num_patches_per_image
-    return [(bbox_idx, token_start, token_end)], text_token_len, total_seq_len
-
-# 🔍 找到带 bbox 的图片索引
+# === 计算带 bbox 图片的视觉 token 范围 ===
 bbox_idx = next((i for i, (_, bbox) in enumerate(images_and_bboxes) if bbox is not None), None)
 assert bbox_idx is not None, "必须提供带有 bbox 的图片"
 
-selected_token_ranges, text_token_len, total_seq_len = compute_selected_token_ranges_from_output(
-    hidden_states, bbox_idx, len(images), num_image_patches
-)
-print(f"✅ 使用带有 bbox 的图片的视觉 token 范围 (Attention Index)：{selected_token_ranges}")
+token_cursor = text_token_len
+for idx in range(bbox_idx):
+    token_cursor += tokens_per_image_list[idx]
+
+token_start = token_cursor
+token_end = token_start + tokens_per_image_list[bbox_idx]
+
+selected_token_ranges = [(bbox_idx, token_start, token_end)]
+
+print(f"✅ 带有 bbox 的图片视觉 token 精确范围 (Attention Index)：{selected_token_ranges}")
+
 
 # === 生成新 token ===
 for step in range(max_new_tokens):
@@ -133,52 +169,41 @@ print(final_output)
 
 # === 解析 attention 并打印关注度（每层打印最关注目标图片的 head）===
 if found_attention is not None:
-    import math
     print(f"\n✅ Needle '{needle}' 被发现，开始 Attention 分析")
 
-    vision_start = text_token_len
-    vision_end = total_seq_len - 1
+    # === 选中 token 索引 ===
     selected_token_indices = []
     for _, start, end in selected_token_ranges:
         selected_token_indices.extend(range(start, end))
     selected_token_indices = torch.tensor(selected_token_indices, device="cpu")
 
     print(f"🎯 所选图片视觉 token 区间: {selected_token_ranges}")
-    print(f"🎯 整体视觉 token 范围: [{vision_start}, {vision_end}]")
+    print(f"🎯 所选 token 总数: {len(selected_token_indices)}")
+    print(f"🎯 found_attention 层数: {len(found_attention)}\n")
+
+    attention_ratio_threshold = 0.08  # 可调：超过这个值才认为是高关注
 
     for layer_idx, layer_attn in enumerate(found_attention):
-        attn_tensor = layer_attn[0]  # (num_heads, 1, seq_len)
+        attn_tensor = layer_attn[0]  # shape: (num_heads, 1, seq_len)
         num_heads = attn_tensor.shape[0]
-        best_head_idx = None
-        best_ratio = -1
-        best_stats = {}
 
         for head_idx in range(num_heads):
             head_attn = attn_tensor[head_idx, 0].clone()
-            head_attn[0] = 0.0
-            head_attn = torch.nan_to_num(head_attn, nan=0.0)
-            head_attn = torch.softmax(head_attn.float(), dim=0)
+            head_attn[0] = 0.0  # 去掉 BOS
+            head_attn = torch.nan_to_num(head_attn.float(), nan=0.0)
+            # 不再 softmax，因为 flash attention 已是 normalized 分布
+
+            selected_sum = head_attn[selected_token_indices].sum().item()
             total_sum = head_attn.sum().item() + 1e-8
+            ratio = selected_sum / total_sum
 
-            selected_attn_sum = head_attn[selected_token_indices].sum().item()
-            selected_ratio = selected_attn_sum / total_sum
-            log_selected = math.log(selected_attn_sum + 1e-8)
+            if ratio >= attention_ratio_threshold:
+                print(f"🔥 Layer {layer_idx:02d} Head {head_idx:02d}: {ratio:.4f}")
 
-            if selected_ratio > best_ratio:
-                best_ratio = selected_ratio
-                best_head_idx = head_idx
-                best_stats = {
-                    "log_sum": log_selected,
-                    "ratio": selected_ratio,
-                    "topk": torch.topk(head_attn[1:], k=5)
-                }
-
-        if best_head_idx is not None:
-            topk_values, topk_indices = best_stats["topk"]
-            print(f"\n🧠 Layer {layer_idx} - 最关注目标图片的 Head {best_head_idx}")
-            print(f"   🎯 log(attn sum on target tokens): {best_stats['log_sum']:.4f}")
-            print(f"   🎯 target token attention ratio  : {best_stats['ratio'] * 100:.2f}%")
-            print(f"   🔍 top-5 attended token indices  : {topk_indices.tolist()}")
-            print(f"   🔍 top-5 attention values        : {[round(v.item(), 5) for v in topk_values]}")
+    # ✅ 打印每层 attention 的 shape（确认结构）
+    shape_info = [a.shape for a in found_attention]
+    print(f"\n📐 提取到的 attention shape（每层）:")
+    for i, shape in enumerate(shape_info):
+        print(f"  Layer {i:02d}: {shape}")
 else:
     print(f"\n❌ Needle '{needle}' 未匹配到，跳过 Attention 分析")

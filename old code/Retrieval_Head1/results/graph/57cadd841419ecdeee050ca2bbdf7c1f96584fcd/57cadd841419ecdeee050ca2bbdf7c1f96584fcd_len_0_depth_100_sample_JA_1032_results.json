@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "ボランティア活動を通じて人と人とのつながりを大切にしてほしいというところから、人々が手を繋いでいるようなものにしました。",
+  "model_response": "アイコンは、シンプルで明瞭なデザインになっています。二つの人形が手を合わせて握手している姿勢が描かれており、これは協調性や共有性を表す意図を示しています。背景には、黄色の帯状のラインが取り入れられています。その背景色は、注目を引く鮮やかな色であり、アイコン全体が引き際立つようにしています。文字部分も、黒い筆跡で書かれた簡潔なフォントを使っています。",
+  "score": 0.0,
+  "test_duration_seconds": 15.355563402175903,
+  "test_timestamp_utc": "2025-03-06 18:34:18+0000"
+}

@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+문을 꼭 닫아주세요의 의미는?
+<|im_end|>
+<|im_start|>assistant

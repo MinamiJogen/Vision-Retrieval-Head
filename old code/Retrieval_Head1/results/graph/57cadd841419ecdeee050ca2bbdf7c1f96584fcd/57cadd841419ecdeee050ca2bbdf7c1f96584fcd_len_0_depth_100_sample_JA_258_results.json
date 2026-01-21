@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "左折して出口に向かうこと",
+  "model_response": "この標識は、右に曲がる方向性を示すものです。曲がった部分の白い線は、右折する道の方向を示しています。",
+  "score": 0.0,
+  "test_duration_seconds": 7.834612607955933,
+  "test_timestamp_utc": "2025-03-06 18:07:35+0000"
+}

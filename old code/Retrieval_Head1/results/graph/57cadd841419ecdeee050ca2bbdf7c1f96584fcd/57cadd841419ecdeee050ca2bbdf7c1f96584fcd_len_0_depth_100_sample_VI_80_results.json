@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "Há cảo, sủi cảo",
+  "model_response": "Trong hình có các sản phẩm bao gồm các gói thực phẩm đóng gói sẵn, có thể là thực phẩm chế biến sẵn hoặc các nguyên liệu nấu nướng. Tuy nhiên, do tôi không biết chính xác tên của các sản phẩm này hoặc không có thông tin chi tiết về chúng, tôi không thể đưa ra danh sách cụ thể về các loại sản phẩm được hiển thị.",
+  "score": 71.42857142857143,
+  "test_duration_seconds": 10.908269882202148,
+  "test_timestamp_utc": "2025-03-06 18:36:24+0000"
+}

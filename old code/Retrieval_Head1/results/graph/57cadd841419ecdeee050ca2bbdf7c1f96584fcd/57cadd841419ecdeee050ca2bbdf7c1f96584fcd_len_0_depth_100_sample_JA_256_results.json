@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "不明",
+  "model_response": "私は画像を分析することはできませんが、看板の背景やデザインから推測すると、この看板は新しいものであると思われます。ただし、具体的な設置日付や開催日程など、その詳細情報はわかりません。",
+  "score": 0.0,
+  "test_duration_seconds": 10.977476358413696,
+  "test_timestamp_utc": "2025-03-06 17:53:11+0000"
+}

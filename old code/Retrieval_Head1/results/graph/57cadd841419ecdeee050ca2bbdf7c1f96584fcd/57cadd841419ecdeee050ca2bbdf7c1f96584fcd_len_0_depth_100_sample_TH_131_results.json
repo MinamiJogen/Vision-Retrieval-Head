@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "16 กุมภาพันธ์ พ.ศ. 2548",
+  "model_response": "คุณกำลังถามถึงพิธีสารเกียวโต (Kyoto Protocol) มีผลบังคับใช้เมื่อไหร่ใช่หรือไม่? ตามที่ผมทราบ, พิธีสารเกียวโตมีผลบังคับใช้เมื่อวันที่ 25 April 2005 และผลบังคับใช้มีกำหนดไว้เพื่อทำให้การลดก๊าซเรือนกระจกของประเทศต่างๆ สามารถจัดการได้ในระดับที่เหมาะสมกับการแก้ไขปัญหาโลกร้อนขึ้นของโลก.",
+  "score": 0.0,
+  "test_duration_seconds": 20.133998155593872,
+  "test_timestamp_utc": "2025-03-06 18:42:16+0000"
+}

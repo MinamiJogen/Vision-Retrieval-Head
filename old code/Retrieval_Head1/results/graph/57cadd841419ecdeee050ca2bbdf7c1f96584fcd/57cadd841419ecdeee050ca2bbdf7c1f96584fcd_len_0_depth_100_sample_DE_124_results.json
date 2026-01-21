@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "So schnell kommt es zum Drama",
+  "model_response": "Die Unterzeile des Magazins zeigt die Schriftfolge \"MEINEN BEINER\" und unter dem Namen \"MEINEN BEINER\" weitere Schriftfolgen, die möglicherweise Informationen oder Anzeigen enthalten. Die genauen Texte sind jedoch nicht scharf genug erkennbar, um eine präzise Übersetzung zu geben.",
+  "score": 0.0,
+  "test_duration_seconds": 19.85405421257019,
+  "test_timestamp_utc": "2025-03-06 18:01:44+0000"
+}

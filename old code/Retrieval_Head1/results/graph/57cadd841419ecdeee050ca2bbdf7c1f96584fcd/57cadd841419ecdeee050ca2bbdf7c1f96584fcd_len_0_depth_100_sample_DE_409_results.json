@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "Weiß mit schwarzer Schrift",
+  "model_response": "Das Schild ist weiß mit schwarzem Schriftzug.",
+  "score": 50.0,
+  "test_duration_seconds": 10.423316717147827,
+  "test_timestamp_utc": "2025-03-06 17:54:58+0000"
+}

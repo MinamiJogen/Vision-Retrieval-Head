@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "Увядающую природу.",
+  "model_response": "Лирический герой видит картины, которые отражают его глубокое чувство поэзии и красоты, возможно, это сюжеты из истории, мифологии или романтические сцены, которые могут быть связаны с его внутренним миром или идеалами.",
+  "score": 0.0,
+  "test_duration_seconds": 19.574894666671753,
+  "test_timestamp_utc": "2025-03-06 18:11:13+0000"
+}

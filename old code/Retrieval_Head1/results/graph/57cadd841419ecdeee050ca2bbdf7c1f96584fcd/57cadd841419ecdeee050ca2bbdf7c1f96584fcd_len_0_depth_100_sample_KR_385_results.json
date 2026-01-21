@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "만두스키는 안선자, 김영옥, 남경희, 이현정, 유미진으로 구성된 그룹",
+  "model_response": "제공하신 이미지에는 특정 인물이나 그 정보가 없기 때문에, 만두스키가 누구인지 정확히 알 수 없습니다. 만약 다른 질문이 있다면 언제든지 물어보세요.",
+  "score": 0.0,
+  "test_duration_seconds": 13.37026858329773,
+  "test_timestamp_utc": "2025-03-06 18:00:10+0000"
+}

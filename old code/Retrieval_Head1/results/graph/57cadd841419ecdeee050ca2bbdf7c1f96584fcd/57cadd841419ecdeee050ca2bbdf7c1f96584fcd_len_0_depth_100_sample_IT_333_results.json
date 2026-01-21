@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "Divieto di sosta carreggiata-marciapiedi-aiuole dalle ore 7:00 alle ore 18:00 dal 9/12/16 al 16/12/16 per lavori di asfaltatura e rifacimento segnaletica.",
+  "model_response": "Il cartello dice:\n\nDIVETO DI SOSTA\nCARREGGIA\nMARCIAPIEDE - AIUOLE\nDALLE ORE 7,00 ALLE ORE 18,00\n\nDAI 9,12,16 AL 12,16\nAI 12,16\nAI 12,16\n\nAL 12,16\n\nASFALTATURA E RIFACIMENTO SEGNALETTICA\n\nQuesto indica che ci sono interruzioni di traffico (sosta) per la manutenzione o il ripristino delle asfaltate e delle aiuole del marciapiede durante le ore specificate.",
+  "score": 79.3103448275862,
+  "test_duration_seconds": 22.62954592704773,
+  "test_timestamp_utc": "2025-03-06 18:39:17+0000"
+}

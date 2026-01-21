@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+Sách giáo khoa này dành cho khối lớp mấy?
+<|im_end|>
+<|im_start|>assistant

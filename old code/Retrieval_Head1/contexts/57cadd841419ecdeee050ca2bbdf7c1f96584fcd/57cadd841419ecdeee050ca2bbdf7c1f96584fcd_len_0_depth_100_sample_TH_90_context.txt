@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+กาแฟที่คั่วบดแล้วมีกลิ่นหอมกรุ่น
+<|im_end|>
+<|im_start|>assistant

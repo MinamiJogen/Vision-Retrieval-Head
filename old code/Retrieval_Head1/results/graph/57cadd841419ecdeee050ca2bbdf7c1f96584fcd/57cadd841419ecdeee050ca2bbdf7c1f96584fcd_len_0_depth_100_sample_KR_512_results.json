@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "재해예방 최첨단 시스템 개발",
+  "model_response": "주요 사업은 'Geotechnical Monitoring Group Co., Ltd.'로, 구체적인 사업 내용은 'GMG U-Slope'에 대한 정보를 제공해주시면 더 정확한 답변을 드릴 수 있습니다.",
+  "score": 0.0,
+  "test_duration_seconds": 12.4993257522583,
+  "test_timestamp_utc": "2025-03-06 17:52:56+0000"
+}

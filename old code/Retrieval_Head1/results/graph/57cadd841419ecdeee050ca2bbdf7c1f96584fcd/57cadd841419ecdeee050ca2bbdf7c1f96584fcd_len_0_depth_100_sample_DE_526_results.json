@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "Schere, Schraube, Hut, Brille, Kelch, Werkzeug, rotes Kreuz",
+  "model_response": "Das Bild zeigt Symbole, die für Handwerker verwendet werden. Hier sind sie auf Deutsch und beziehen sich auf verschiedene Berufe:\n\n1. Handwerker (eine Schere): Dieser Symbol Ausdruck wird oft als Metzger oder Schreiner verwendet.\n2. Apotheker (eine Schere): Dieser Ausdruck wird oft als Apotheker verwendet.\n3. Mechaniker (eine Schere): Dieser Ausdruck wird oft als Mechaniker verwendet.\n4. Koch (eine Schere): Dieser Ausdruck wird oft als Koch verwendet.\n\nDie Symbole selbst sind keine spezifischen Symbole, sondern werden oft als Metzger, Schreiner, Apotheker oder Mechaniker verwendet, um ihre Handwerkszugehörigkeit zu kennzeichnen.",
+  "score": 12.5,
+  "test_duration_seconds": 26.627349376678467,
+  "test_timestamp_utc": "2025-03-06 18:35:49+0000"
+}

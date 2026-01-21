@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "Потому что они являются ключевыми для понимания смысла всей главы.",
+  "model_response": "Этот заголовок, \"БАПОАНТИКЫ БАПОАНТОВА 63. МУРМЕНСКЕ УЧЕНИТЕЛЬНОЕ УЧРЕЖДЕНИЕ.\" (\"BAPANTIKI BAPANTOVU 63. MURMENSKYE UCHENITELNOYE UCHREZHEDenie\"), указывает на контекст статьи или главы, связанный с историческим или географическим местом Бапантики в области Бапантоа (Bapantoa) и возможно связан с образовательным учреждением в Мурмense. Возможно, это название связано с темой статьи, которая может быть об истории, культуре или образовании в этом регионе.",
+  "score": 0.0,
+  "test_duration_seconds": 28.52612066268921,
+  "test_timestamp_utc": "2025-03-06 17:57:14+0000"
+}

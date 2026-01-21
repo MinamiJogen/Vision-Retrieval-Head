@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "新聞記事内・ベストセラー\n読者に関する記事\n出版業界に関する記事\n著者紹介記事\n文学賞受賞作品紹介\n平和・健康や命の大切さ・環境問題・人権問題等の記事",
+  "model_response": "申し訳ありませんが、画像を直接閲覧することはできませんので、お手伝いすることはできません。ただし、一般的に「新聞記事利用標識物」とは、何か特定の記号やマークを使用して、文章や写真などの新聞記事を引用する際に使用されるものと推測できます。具体的な意味や使用方法は、当該記事や出版物の具体的な内容によって異なると思われます。",
+  "score": 0.0,
+  "test_duration_seconds": 20.22931170463562,
+  "test_timestamp_utc": "2025-03-06 18:08:18+0000"
+}

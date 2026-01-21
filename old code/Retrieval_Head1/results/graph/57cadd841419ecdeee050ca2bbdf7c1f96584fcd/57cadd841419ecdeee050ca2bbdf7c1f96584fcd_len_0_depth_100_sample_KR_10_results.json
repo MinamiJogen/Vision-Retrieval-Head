@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "귀 피어싱",
+  "model_response": "이 이미지에는 텍스트가 없기 때문에 그 의미를 정확하게 알 수 없습니다. 그러나 표시된 형태는 일반적으로 안전 경고 표시나 지시문을 나타내는 것으로 보입니다. 이 표시는 어떤 상황이나 위험에 대한 경고 또는 지시를 전달하기 위해 사용될 수 있습니다.",
+  "score": 0.0,
+  "test_duration_seconds": 13.547534465789795,
+  "test_timestamp_utc": "2025-03-06 17:54:07+0000"
+}

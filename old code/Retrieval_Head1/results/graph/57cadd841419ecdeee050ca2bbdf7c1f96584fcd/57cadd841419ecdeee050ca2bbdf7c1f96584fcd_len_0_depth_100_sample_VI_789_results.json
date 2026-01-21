@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "Cà tím nướng mỡ hành, bông cải xào dầu hào, bầu luộc hột vịt",
+  "model_response": "Trong hóa đơn, món ăn có giá 36.000đ là \"Ban A1\" và món \"Zeil\" với số lượng 1, giá là 36,000 đ.",
+  "score": 30.76923076923077,
+  "test_duration_seconds": 6.316603422164917,
+  "test_timestamp_utc": "2025-03-06 17:57:57+0000"
+}

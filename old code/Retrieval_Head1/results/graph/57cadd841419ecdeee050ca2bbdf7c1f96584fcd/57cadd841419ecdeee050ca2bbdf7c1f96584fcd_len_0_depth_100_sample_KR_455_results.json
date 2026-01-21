@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "게임 개발 및 서비스 중에 다양한 이슈가 발생할 수 있는데, 거기서 발생하는 수많은 이슈와 각종 요구 사항을 수동으로 처리하기에는 한계가 있기 때문에 사용",
+  "model_response": "이슈 관리 (Issue Tracking System)는 문제 해결을 위한 일련의 프로세스를 지원하는 소프트웨어 시스템입니다. 이 시스템은 개발자, QA 직원, 프로젝트 관리자 등이 문제를 신고하고, 문제가 해결될 때까지 그 문제를 추적하고 관리할 수 있도록 합니다. 이슈 관리 시스템은 일반적으로 버그, 요청사항, 문제 등과 같은 고객 요구사항 또는 개발 과정에서 발생하는 문제를 기록하고, 문제의 우선 순위, 상태, 해결 여부 등을 관리합니다.",
+  "score": 0.0,
+  "test_duration_seconds": 23.034578561782837,
+  "test_timestamp_utc": "2025-03-06 17:49:11+0000"
+}

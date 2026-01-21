@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+Gói gia vị A-One ở hình bên phải có khối lượng tịnh là bao nhiêu?
+<|im_end|>
+<|im_start|>assistant

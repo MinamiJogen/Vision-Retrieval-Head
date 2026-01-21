@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "Trung Quốc/China",
+  "model_response": "Xin lỗi, tôi không thể trả lời câu hỏi đó vì hình ảnh được cung cấp không rõ ràng để tôi có thể đọc hoặc phân tích văn bản trên đó. Hãy cung cấp hình ảnh rõ ràng hơn hoặc cho biết thêm chi tiết để tôi có thể trả lời câu hỏi của bạn một cách chính xác.",
+  "score": 25.0,
+  "test_duration_seconds": 19.162129402160645,
+  "test_timestamp_utc": "2025-03-06 18:12:28+0000"
+}

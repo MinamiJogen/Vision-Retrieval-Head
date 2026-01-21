@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "Quarante enfants.",
+  "model_response": "La question dans l'image demande combien d'enfants il y a dans une salle, et la réponse est :\n\n\"Quarante enfants dans une salle,\"\n\nCela signifie qu'il y a quarante enfants dans cette salle.",
+  "score": 100.0,
+  "test_duration_seconds": 16.73472785949707,
+  "test_timestamp_utc": "2025-03-06 17:48:48+0000"
+}

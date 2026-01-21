@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "ゲノム配列に注釈をつけること",
+  "model_response": "ゲノムアノテーション（Genome annotation）は、DNAのゲノム序列を解析し、その中に含まれる遺伝子や非遺伝子の機能を解明するための手法です。これにより、生物学的な情報を得ることができ、遺伝子の役割や遺伝的変化について理解することができます。ゲノムアノテーションは、生命科学の研究において、遺伝子やタンパク質の関連性を解明するための重要なツールとして利用されます。",
+  "score": 0.0,
+  "test_duration_seconds": 16.03878664970398,
+  "test_timestamp_utc": "2025-03-06 17:55:48+0000"
+}

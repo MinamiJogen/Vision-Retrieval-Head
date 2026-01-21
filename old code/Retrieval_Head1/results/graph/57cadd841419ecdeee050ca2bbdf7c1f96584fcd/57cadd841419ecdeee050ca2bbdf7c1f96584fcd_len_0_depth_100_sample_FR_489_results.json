@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "Une bouteille d'huile de pépins de raisin.",
+  "model_response": "L'image montre un flacon avec une étiquette qui semble contenir des informations sur le produit ou la marque. Le texte est écrit en français et il y est mentionné \"Tilhieu\" suivi de \"Raistis\", ce qui pourrait faire référence à une marque ou une variété de raisins. La forme du flacon et l'aspect de l'étiquette suggèrent qu'il peut s'agir d'un produit de vin ou d'une autre boisson fermentée.",
+  "score": 55.55555555555556,
+  "test_duration_seconds": 13.954586267471313,
+  "test_timestamp_utc": "2025-03-06 18:37:22+0000"
+}

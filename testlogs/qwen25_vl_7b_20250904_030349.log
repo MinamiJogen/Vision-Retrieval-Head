@@ -1,0 +1,183 @@
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ 
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ echo "========================================="
+=========================================
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ echo "开始测试 Qwen2.5-VL-7B-Instruct - $(date)"
+开始测试 Qwen2.5-VL-7B-Instruct - Thu 04 Sep 2025 03:03:49 AM +08
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ echo "完整日志将保存到: ${FULL_LOG}"
+完整日志将保存到: ./testlogs/qwen25_vl_7b_20250904_030349.log
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ echo "========================================="
+=========================================
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ echo
+
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ 
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ # 设置模型路径 - 请根据你的实际路径修改
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ MODEL_PATH="Qwen/Qwen2.5-VL-7B-Instruct"  # 如果是本地路径，请修改为完整路径
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ # MODEL_PATH="/path/to/your/local/Qwen2.5-VL-7B-Instruct"  # 本地模型示例
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ 
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ # 输出文件
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ OUTPUT_FILE="./testlogs/qwen25_vl_7b_videomme.json"
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ SUFFIX="videomme_qwen25_vl_7b"
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ 
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ echo ">>> 模型路径: ${MODEL_PATH}"
+>>> 模型路径: Qwen/Qwen2.5-VL-7B-Instruct
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ echo ">>> 开始评测 VideoMME..."
+>>> 开始评测 VideoMME...
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ echo ">>> 开始时间: $(date)"
+>>> 开始时间: Thu 04 Sep 2025 03:03:49 AM +08
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ 
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ # 评测 VideoMME
+(longva) minami@AS-4124GS-TNR:/disk3/minami/Vision-Retrieval-Head$ accelerate launch --num_processes 4 --main_process_port 12345 \
+>     -m lmms_eval \
+>     --model qwen2_vl \
+>     --model_args "pretrained=${MODEL_PATH},device_map=auto" \
+>     --tasks videomme \
+>     --batch_size 1 \
+>     --log_samples \
+>     --log_samples_suffix "${SUFFIX}" \
+>     --output_path "${OUTPUT_FILE}" 2>&1
+The following values were not passed to `accelerate launch` and had defaults used instead:
+		More than one GPU was found, enabling multi-GPU training.
+		If this was unintended please pass in `--num_processes=1`.
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+W0904 03:03:54.056000 2974482 site-packages/torch/distributed/elastic/agent/server/api.py:704] Received Signals.SIGINT death signal, shutting down workers
+W0904 03:03:54.057000 2974482 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2974634 closing signal SIGINT
+Traceback (most recent call last):
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+W0904 03:03:54.057000 2974482 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2974635 closing signal SIGINT
+    return _run_code(code, main_globals, None,
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/disk3/minami/Vision-Retrieval-Head/lmms-eval/lmms_eval/__main__.py", line 20, in <module>
+Traceback (most recent call last):
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    from accelerate import Accelerator
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/accelerate/__init__.py", line 16, in <module>
+    from .accelerator import Accelerator
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/accelerate/accelerator.py", line 32, in <module>
+W0904 03:03:54.057000 2974482 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2974636 closing signal SIGINT
+    import torch
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/__init__.py", line 2486, in <module>
+    return _run_code(code, main_globals, None,
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/runpy.py", line 86, in _run_code
+Traceback (most recent call last):
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    exec(code, run_globals)
+  File "/disk3/minami/Vision-Retrieval-Head/lmms-eval/lmms_eval/__main__.py", line 20, in <module>
+    from accelerate import Accelerator
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/accelerate/__init__.py", line 16, in <module>
+W0904 03:03:54.057000 2974482 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2974637 closing signal SIGINT
+    from .accelerator import Accelerator
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/accelerate/accelerator.py", line 32, in <module>
+    return _run_code(code, main_globals, None,
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/runpy.py", line 86, in _run_code
+    import torch
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/__init__.py", line 2486, in <module>
+    exec(code, run_globals)
+  File "/disk3/minami/Vision-Retrieval-Head/lmms-eval/lmms_eval/__main__.py", line 20, in <module>
+    from torch import _meta_registrations
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/_meta_registrations.py", line 6547, in <module>
+Traceback (most recent call last):
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    from accelerate import Accelerator
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/accelerate/__init__.py", line 16, in <module>
+    from .accelerator import Accelerator
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/accelerate/accelerator.py", line 32, in <module>
+    import torch
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/__init__.py", line 2486, in <module>
+    return _run_code(code, main_globals, None,
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/disk3/minami/Vision-Retrieval-Head/lmms-eval/lmms_eval/__main__.py", line 20, in <module>
+        from torch import _meta_registrationsfrom accelerate import Accelerator
+
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/_meta_registrations.py", line 6555, in <module>
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/accelerate/__init__.py", line 16, in <module>
+    from .accelerator import Accelerator
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/accelerate/accelerator.py", line 32, in <module>
+    import torch
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/__init__.py", line 2486, in <module>
+    from torch import _meta_registrations
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/_meta_registrations.py", line 3240, in <module>
+        _create_binary_float_meta_func(aten.special_chebyshev_polynomial_u)from torch import _meta_registrations
+
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/_meta_registrations.py", line 6527, in _create_binary_float_meta_func
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/_meta_registrations.py", line 4731, in <module>
+    def meta__convert_weight_to_int4pack(w, inner_k_tiles):
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/_meta_registrations.py", line 51, in wrapper
+    pytree.tree_map_(register, op)
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/utils/_pytree.py", line 995, in tree_map_
+    _create_binary_float_meta_func(aten.special_hermite_polynomial_he)
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/_meta_registrations.py", line 6527, in _create_binary_float_meta_func
+    def grid_sampler_3d_backward(
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/_meta_registrations.py", line 51, in wrapper
+    pytree.tree_map_(register, op)
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/utils/_pytree.py", line 997, in tree_map_
+    def _f(x, y):
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/_meta_registrations.py", line 51, in wrapper
+    pytree.tree_map_(register, op)
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/utils/_pytree.py", line 997, in tree_map_
+        tuple(map(func, *flat_args))  # consume and exhaust the iterableleaves, treespec = tree_flatten(tree, is_leaf=is_leaf)
+
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/_meta_registrations.py", line 49, in register
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/utils/_pytree.py", line 874, in tree_flatten
+    tuple(map(func, *flat_args))  # consume and exhaust the iterable
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/_meta_registrations.py", line 49, in register
+    _add_op_to_registry(meta_table, op, fn)
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/_decomp/__init__.py", line 56, in _add_op_to_registry
+    _add_op_to_registry(meta_table, op, fn)
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/_decomp/__init__.py", line 56, in _add_op_to_registry
+    spec = _tree_flatten_helper(tree, leaves, is_leaf=is_leaf)
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/utils/_pytree.py", line 863, in _tree_flatten_helper
+    def _f(x, y):
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/_meta_registrations.py", line 51, in wrapper
+    pytree.tree_map_(register, op)
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/utils/_pytree.py", line 997, in tree_map_
+    return TreeSpec(node_type, context, children_specs)
+  File "<string>", line 6, in __init__
+    overloads.append(getattr(op, ol))
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/_ops.py", line 1076, in __getattr__
+    tuple(map(func, *flat_args))  # consume and exhaust the iterable
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/_meta_registrations.py", line 49, in register
+    overloads.append(getattr(op, ol))
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/_ops.py", line 1087, in __getattr__
+    _add_op_to_registry(meta_table, op, fn)
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/_decomp/__init__.py", line 64, in _add_op_to_registry
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/utils/_pytree.py", line 695, in __post_init__
+    if torch._C._dispatch_has_kernel(op_overload.name()):
+KeyboardInterrupt
+    num_leaves = sum(spec.num_leaves for spec in self.children_specs)
+KeyboardInterrupt
+    OpOverload(self, op_, op_dk_, schema, tags)
+      File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/_ops.py", line 679, in __init__
+op_dk_tags = torch._C._get_operation_overload(
+KeyboardInterrupt
+    continue
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/minami/miniconda/envs/longva/bin/accelerate", line 8, in <module>
+    sys.exit(main())
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/accelerate/commands/accelerate_cli.py", line 48, in main
+    args.func(args)
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/accelerate/commands/launch.py", line 1190, in launch_command
+    multi_gpu_launcher(args)
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/accelerate/commands/launch.py", line 808, in multi_gpu_launcher
+    distrib_run.run(args)
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 260, in launch_agent
+    result = agent.run()
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 137, in wrapper
+    result = f(*args, **kwargs)
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 696, in run
+    result = self._invoke_run(role)
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 855, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 84, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 2974482 got signal: 2
+

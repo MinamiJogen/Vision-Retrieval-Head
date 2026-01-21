@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": " Activités multisports avec Zumba Julia",
+  "model_response": "Le slogan sur l'image semble être \"City's Art Sport Avéc ZUMBA JUlia\". Cependant, il est important de noter que la traduction ou la transcription de ce slogan peut varier en fonction du contexte local et de la langue utilisée. Si vous avez besoin d'une traduction précise, veuillez fournir plus de détails ou une version plus claire du slogan.",
+  "score": 50.0,
+  "test_duration_seconds": 16.04752492904663,
+  "test_timestamp_utc": "2025-03-06 18:41:05+0000"
+}

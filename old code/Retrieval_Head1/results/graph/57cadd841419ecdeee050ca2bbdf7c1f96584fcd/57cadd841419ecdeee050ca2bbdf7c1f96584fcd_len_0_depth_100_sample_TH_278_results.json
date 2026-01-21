@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "ezy taste",
+  "model_response": "This packaging appears to be for a product called \"EZY TASTE MAYONNAISE\" in Thai. The brand name is not entirely clear from the image provided, but it seems to be a generic or private label brand rather than a well-known commercial brand. If you need information about the specific brand, please provide more context or details about the product or packaging.",
+  "score": 100.0,
+  "test_duration_seconds": 8.616621255874634,
+  "test_timestamp_utc": "2025-03-06 17:53:41+0000"
+}

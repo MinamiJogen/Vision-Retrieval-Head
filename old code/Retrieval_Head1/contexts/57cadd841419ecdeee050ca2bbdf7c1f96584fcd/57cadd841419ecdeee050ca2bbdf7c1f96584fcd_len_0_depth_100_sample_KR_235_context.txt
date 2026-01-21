@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+NOTA제도에 대한 정치 교육이 제대로 이뤄지지 않은 상황에서 NOTA를 도입하는 것은 옳은지에 대한 의견은?
+<|im_end|>
+<|im_start|>assistant

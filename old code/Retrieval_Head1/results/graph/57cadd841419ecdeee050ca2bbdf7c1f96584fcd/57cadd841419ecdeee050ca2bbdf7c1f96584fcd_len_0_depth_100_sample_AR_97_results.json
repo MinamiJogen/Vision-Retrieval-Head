@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "أغسطس 2020",
+  "model_response": "تاريخ الإنتاج على العبوة هو أغسطس 2020.",
+  "score": 100.0,
+  "test_duration_seconds": 3.3521640300750732,
+  "test_timestamp_utc": "2025-03-06 18:05:31+0000"
+}

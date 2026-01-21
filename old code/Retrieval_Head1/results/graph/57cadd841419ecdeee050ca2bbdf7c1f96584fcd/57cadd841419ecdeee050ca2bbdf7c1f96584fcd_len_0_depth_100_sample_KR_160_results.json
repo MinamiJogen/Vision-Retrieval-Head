@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "\"내 잡지가 나온다는 것이 신기하고 좋습니다.\", \"개인PC를 사용할 수 있는 점과 매번 저녁식사 시간에 맞춰서 주는 간식들이 좋았다.\", \"잡지가 어떻게 만들어가는지 한 단계 한 단계 배울 수 있어서 좋았고, 색다른 경험을 한 것 같아서 좋았다.\", \"선생님들도 모두 친절하시고 이런 직업에 종사하시는 분들을 만날 수 있어서 좋았다.\"",
+  "model_response": "이미지에 보인 내용은 한국어로 작성된 텍스트입니다. \"프로그램을 들으며 가장 좋았던 점은?\"에 대한 답변이 포함되어 있습니다. 그러나 이미지는 텍스트만 제공하기 때문에, 정확한 내용을 제공할 수 없습니다.",
+  "score": 0.0,
+  "test_duration_seconds": 17.830749988555908,
+  "test_timestamp_utc": "2025-03-06 17:58:15+0000"
+}

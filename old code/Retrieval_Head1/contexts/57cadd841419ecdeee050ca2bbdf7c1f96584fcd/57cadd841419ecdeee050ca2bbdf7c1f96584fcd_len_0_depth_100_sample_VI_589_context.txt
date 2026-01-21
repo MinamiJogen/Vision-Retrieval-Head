@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+Công ty nào chuyên thi công lắp đặt cửa cổng sắt mỹ thuật tại Đà Nẵng?
+<|im_end|>
+<|im_start|>assistant

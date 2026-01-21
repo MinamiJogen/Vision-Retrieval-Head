@@ -1,0 +1,372 @@
+nohup: ignoring input
+/home/minami/Vision-Atttention-Head/.venv/lib/python3.8/site-packages/huggingface_hub/file_download.py:795: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+You are using a model of type llava to instantiate a model of type llava_llama. This is not supported for all configurations of models and can yield errors.
+🔄 Loading LLaVA model, please wait...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]/home/minami/Vision-Atttention-Head/.venv/lib/python3.8/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+Loading checkpoint shards:  50%|█████     | 1/2 [00:13<00:13, 13.92s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:19<00:00,  8.77s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:19<00:00,  9.55s/it]
+✅ Model loaded successfully!
+Processing dataset:   0%|          | 0/1000 [00:00<?, ?sample/s]Processing dataset:   0%|          | 1/1000 [00:31<8:52:01, 31.95s/sample]Processing dataset:   0%|          | 2/1000 [00:39<4:56:48, 17.84s/sample]Processing dataset:   0%|          | 3/1000 [00:47<3:39:46, 13.23s/sample]Processing dataset:   0%|          | 4/1000 [01:13<5:05:07, 18.38s/sample]Processing dataset:   0%|          | 5/1000 [01:23<4:14:57, 15.37s/sample]Processing dataset:   1%|          | 6/1000 [01:54<5:38:04, 20.41s/sample]Processing dataset:   1%|          | 7/1000 [02:20<6:09:50, 22.35s/sample]Processing dataset:   1%|          | 8/1000 [02:28<4:54:28, 17.81s/sample]Processing dataset:   1%|          | 9/1000 [02:37<4:08:26, 15.04s/sample]Processing dataset:   1%|          | 10/1000 [03:15<6:03:48, 22.05s/sample]Processing dataset:   1%|          | 11/1000 [03:46<6:47:43, 24.74s/sample]Processing dataset:   1%|          | 12/1000 [04:11<6:49:46, 24.89s/sample]Processing dataset:   1%|▏         | 13/1000 [04:20<5:31:20, 20.14s/sample]Processing dataset:   1%|▏         | 14/1000 [04:36<5:11:44, 18.97s/sample]Processing dataset:   2%|▏         | 15/1000 [04:45<4:22:39, 16.00s/sample]Processing dataset:   2%|▏         | 16/1000 [04:57<3:58:23, 14.54s/sample]Processing dataset:   2%|▏         | 17/1000 [05:08<3:43:06, 13.62s/sample]Processing dataset:   2%|▏         | 18/1000 [05:38<5:00:57, 18.39s/sample]Processing dataset:   2%|▏         | 19/1000 [05:51<4:34:53, 16.81s/sample]Processing dataset:   2%|▏         | 20/1000 [06:07<4:30:18, 16.55s/sample]Processing dataset:   2%|▏         | 21/1000 [06:23<4:29:50, 16.54s/sample]Processing dataset:   2%|▏         | 22/1000 [06:36<4:13:43, 15.57s/sample]Processing dataset:   2%|▏         | 23/1000 [07:21<6:35:50, 24.31s/sample]Processing dataset:   2%|▏         | 24/1000 [07:35<5:44:50, 21.20s/sample]Processing dataset:   2%|▎         | 25/1000 [07:48<5:02:05, 18.59s/sample]Processing dataset:   3%|▎         | 26/1000 [08:03<4:47:53, 17.73s/sample]Processing dataset:   3%|▎         | 27/1000 [08:23<4:56:58, 18.31s/sample]Processing dataset:   3%|▎         | 28/1000 [09:04<6:48:17, 25.20s/sample]Processing dataset:   3%|▎         | 29/1000 [09:23<6:16:33, 23.27s/sample]Processing dataset:   3%|▎         | 30/1000 [09:39<5:41:28, 21.12s/sample]Processing dataset:   3%|▎         | 31/1000 [09:58<5:29:25, 20.40s/sample]Processing dataset:   3%|▎         | 32/1000 [10:50<8:04:25, 30.03s/sample]Processing dataset:   3%|▎         | 33/1000 [11:11<7:18:51, 27.23s/sample]Processing dataset:   3%|▎         | 34/1000 [11:30<6:38:32, 24.75s/sample]Processing dataset:   4%|▎         | 35/1000 [11:47<6:02:26, 22.54s/sample]Processing dataset:   4%|▎         | 36/1000 [12:30<7:37:50, 28.50s/sample]Processing dataset:   4%|▎         | 37/1000 [13:00<7:47:49, 29.15s/sample]Processing dataset:   4%|▍         | 38/1000 [13:22<7:13:04, 27.01s/sample]Processing dataset:   4%|▍         | 39/1000 [13:47<6:58:48, 26.15s/sample]Processing dataset:   4%|▍         | 40/1000 [14:06<6:23:29, 23.97s/sample]Processing dataset:   4%|▍         | 41/1000 [14:31<6:32:02, 24.53s/sample]Processing dataset:   4%|▍         | 42/1000 [15:29<9:11:00, 34.51s/sample]Processing dataset:   4%|▍         | 43/1000 [15:52<8:12:43, 30.89s/sample]Processing dataset:   4%|▍         | 44/1000 [17:01<11:15:17, 42.38s/sample]Processing dataset:   4%|▍         | 45/1000 [17:55<12:10:54, 45.92s/sample]Processing dataset:   5%|▍         | 46/1000 [18:42<12:13:23, 46.12s/sample]Processing dataset:   5%|▍         | 47/1000 [19:45<13:33:47, 51.24s/sample]Processing dataset:   5%|▍         | 48/1000 [20:13<11:44:47, 44.42s/sample]Processing dataset:   5%|▍         | 49/1000 [21:16<13:11:14, 49.92s/sample]Processing dataset:   5%|▌         | 50/1000 [21:58<12:33:04, 47.56s/sample]Processing dataset:   5%|▌         | 51/1000 [23:02<13:52:05, 52.61s/sample]Processing dataset:   5%|▌         | 52/1000 [24:08<14:51:01, 56.39s/sample]Processing dataset:   5%|▌         | 53/1000 [24:41<13:01:19, 49.50s/sample]Processing dataset:   5%|▌         | 54/1000 [25:53<14:44:56, 56.13s/sample]Processing dataset:   6%|▌         | 55/1000 [26:28<13:04:34, 49.81s/sample]Processing dataset:   6%|▌         | 56/1000 [26:58<11:31:21, 43.94s/sample]Processing dataset:   6%|▌         | 57/1000 [27:30<10:33:41, 40.32s/sample]Processing dataset:   6%|▌         | 58/1000 [28:43<13:05:53, 50.06s/sample]Processing dataset:   6%|▌         | 59/1000 [29:15<11:43:12, 44.84s/sample]Processing dataset:   6%|▌         | 60/1000 [29:50<10:52:42, 41.66s/sample]Processing dataset:   6%|▌         | 61/1000 [31:03<13:20:16, 51.14s/sample]Processing dataset:   6%|▌         | 62/1000 [32:17<15:05:45, 57.94s/sample]Processing dataset:   6%|▋         | 63/1000 [33:24<15:49:34, 60.81s/sample]Processing dataset:   6%|▋         | 64/1000 [33:57<13:39:53, 52.56s/sample]Processing dataset:   6%|▋         | 65/1000 [35:25<16:23:01, 63.08s/sample]Processing dataset:   7%|▋         | 66/1000 [36:01<14:13:31, 54.83s/sample]Processing dataset:   7%|▋         | 67/1000 [37:26<16:36:25, 64.08s/sample]Processing dataset:   7%|▋         | 68/1000 [37:59<14:08:20, 54.61s/sample]Processing dataset:   7%|▋         | 69/1000 [39:08<15:13:07, 58.85s/sample]Processing dataset:   7%|▋         | 70/1000 [39:44<13:29:16, 52.21s/sample]Processing dataset:   7%|▋         | 71/1000 [40:17<11:56:58, 46.31s/sample]Processing dataset:   7%|▋         | 72/1000 [40:54<11:14:35, 43.62s/sample]Processing dataset:   7%|▋         | 73/1000 [41:28<10:26:36, 40.56s/sample]Processing dataset:   7%|▋         | 74/1000 [42:01<9:51:45, 38.34s/sample] Processing dataset:   8%|▊         | 75/1000 [43:12<12:22:41, 48.17s/sample]Processing dataset:   8%|▊         | 76/1000 [43:44<11:06:00, 43.25s/sample]Processing dataset:   8%|▊         | 77/1000 [44:38<11:56:17, 46.56s/sample]Processing dataset:   8%|▊         | 78/1000 [45:13<11:01:50, 43.07s/sample]Processing dataset:   8%|▊         | 79/1000 [45:46<10:15:10, 40.08s/sample]Processing dataset:   8%|▊         | 80/1000 [46:24<10:03:41, 39.37s/sample]Processing dataset:   8%|▊         | 81/1000 [47:47<13:26:46, 52.67s/sample]Processing dataset:   8%|▊         | 82/1000 [48:30<12:39:20, 49.63s/sample]Processing dataset:   8%|▊         | 83/1000 [49:40<14:14:17, 55.90s/sample]Processing dataset:   8%|▊         | 84/1000 [50:19<12:55:16, 50.78s/sample]Processing dataset:   8%|▊         | 85/1000 [51:54<16:15:13, 63.95s/sample]Processing dataset:   9%|▊         | 86/1000 [52:40<14:54:32, 58.72s/sample]Processing dataset:   9%|▊         | 87/1000 [53:48<15:33:42, 61.36s/sample]Processing dataset:   9%|▉         | 88/1000 [54:28<13:57:37, 55.11s/sample]Processing dataset:   9%|▉         | 89/1000 [55:11<13:00:51, 51.43s/sample]Processing dataset:   9%|▉         | 90/1000 [55:53<12:14:23, 48.42s/sample]Processing dataset:   9%|▉         | 91/1000 [57:27<15:42:13, 62.19s/sample]Processing dataset:   9%|▉         | 92/1000 [58:47<17:03:45, 67.65s/sample]Processing dataset:   9%|▉         | 93/1000 [1:00:28<19:31:11, 77.48s/sample]Processing dataset:   9%|▉         | 94/1000 [1:01:21<17:39:49, 70.19s/sample]Processing dataset:  10%|▉         | 95/1000 [1:02:10<16:03:32, 63.88s/sample]Processing dataset:  10%|▉         | 96/1000 [1:03:41<18:03:13, 71.90s/sample]Processing dataset:  10%|▉         | 97/1000 [1:05:03<18:47:13, 74.90s/sample]Processing dataset:  10%|▉         | 98/1000 [1:06:22<19:06:11, 76.24s/sample]Processing dataset:  10%|▉         | 99/1000 [1:07:05<16:34:24, 66.22s/sample]Processing dataset:  10%|█         | 100/1000 [1:08:14<16:47:46, 67.18s/sample]Processing dataset:  10%|█         | 101/1000 [1:09:53<19:07:39, 76.60s/sample]Processing dataset:  10%|█         | 102/1000 [1:11:09<19:04:54, 76.50s/sample]Processing dataset:  10%|█         | 103/1000 [1:12:06<17:34:12, 70.52s/sample]Processing dataset:  10%|█         | 104/1000 [1:12:54<15:53:55, 63.88s/sample]Processing dataset:  10%|█         | 105/1000 [1:13:37<14:20:31, 57.69s/sample]Processing dataset:  11%|█         | 106/1000 [1:15:24<17:58:50, 72.41s/sample]Processing dataset:  11%|█         | 107/1000 [1:16:06<15:40:49, 63.21s/sample]Processing dataset:  11%|█         | 108/1000 [1:17:40<17:57:18, 72.46s/sample]Processing dataset:  11%|█         | 109/1000 [1:18:50<17:45:50, 71.77s/sample]Processing dataset:  11%|█         | 110/1000 [1:19:40<16:06:35, 65.16s/sample]Processing dataset:  11%|█         | 111/1000 [1:20:26<14:42:11, 59.54s/sample]Processing dataset:  11%|█         | 112/1000 [1:21:53<16:42:45, 67.75s/sample]Processing dataset:  11%|█▏        | 113/1000 [1:23:21<18:12:17, 73.89s/sample]Processing dataset:  11%|█▏        | 114/1000 [1:24:11<16:25:18, 66.72s/sample]Processing dataset:  12%|█▏        | 115/1000 [1:25:06<15:32:15, 63.20s/sample]Processing dataset:  12%|█▏        | 116/1000 [1:25:59<14:43:45, 59.98s/sample]Processing dataset:  12%|█▏        | 117/1000 [1:27:30<16:59:02, 69.24s/sample]Processing dataset:  12%|█▏        | 118/1000 [1:29:06<18:58:25, 77.44s/sample]Processing dataset:  12%|█▏        | 119/1000 [1:31:07<22:07:07, 90.38s/sample]Processing dataset:  12%|█▏        | 120/1000 [1:32:02<19:31:18, 79.86s/sample]Processing dataset:  12%|█▏        | 121/1000 [1:33:09<18:32:59, 75.97s/sample]Processing dataset:  12%|█▏        | 122/1000 [1:35:11<21:55:18, 89.88s/sample]Processed 1/1000 - QID: 22MexNkBPpdZGX6sxbxVBH, Correct: cab
+Processed 2/1000 - QID: 22ZAvqke8EhGDj8e4eyios, Correct: office
+Processed 3/1000 - QID: 22oou4R5ejh4Ay9UQG7yGT, Correct: farmer
+Processed 4/1000 - QID: 22qCSTGL82TcgGtu9wtcrL, Correct: airport workers
+Processed 5/1000 - QID: 22qvnfBREuA4LUGw3cfTgg, Correct: two
+Processed 6/1000 - QID: 23NaDk4gncPVsGzZ7UuxNK, Correct: theater
+Processed 7/1000 - QID: 23VQ24vGdCfx2vuwoNqxwk, Correct: happy
+Processed 8/1000 - QID: 23ibLk5tF4wVKd7MMms9Yp, Correct: downpour
+Processed 9/1000 - QID: 23x4iQXWfAeZxqCJVbTuv5, Correct: bow
+Processed 10/1000 - QID: 23xWxgFhSv5sZaxwJrqJwm, Correct: turn right
+Processed 11/1000 - QID: 24Vbs8HwsWk7uuMZcSFBHd, Correct: bike
+Processed 12/1000 - QID: 24pdoq3jwTbLqATxYufZJZ, Correct: human
+Processed 13/1000 - QID: 24vcZcaxamEJwTD7wHYb4v, Correct: uk
+Processed 14/1000 - QID: 25DU8SkTV8JifnFUGcgv4r, Correct: 2009
+Processed 15/1000 - QID: 25EKstQLh3QXDC7R4Cggpr, Correct: horse
+Processed 16/1000 - QID: 25NqUCWjGRoMadvbsp5EhW, Correct: carrot
+Processed 17/1000 - QID: 25V87YPnFdGNMCTyDCL4KW, Correct: macintosh
+Processed 18/1000 - QID: 25Vd9e8dW8qu6Tsmagyds6, Correct: flying
+Processed 19/1000 - QID: 25XbFPtCMaRohAb9mWMUqV, Correct: pitcher
+Processed 20/1000 - QID: 25aCRRGXTWrsn6YNokiu37, Correct: barbeque
+Processed 21/1000 - QID: 25ixsJaCVY6yNtqvMBGiQ4, Correct: baby shark
+Processed 22/1000 - QID: 25nambkR7uUGby8c3As6Ss, Correct: b
+Processed 23/1000 - QID: 25ptF6QJPGuf9aCqSXm2R8, Correct: cyclist
+Processed 24/1000 - QID: 25sUWjaZcsndzmwJa4UJxR, Correct: horse racing
+Processed 25/1000 - QID: 268B6iiuB9yTEd9sG8tuvY, Correct: morning
+Processed 26/1000 - QID: 26Cxre88izVxEdJEuggHYo, Correct: mirror
+Processed 27/1000 - QID: 26FeBKm6vmfcWcjaMQbLEp, Correct: financial
+Processed 28/1000 - QID: 26VTMNEcfNN2Rs5ZGZUB9F, Correct: higher wages
+Processed 29/1000 - QID: 26q3Ap8si2cRuRdfcqCiYP, Correct: poodles
+Processed 30/1000 - QID: 274szRA2ikb5Kke7QZgY23, Correct: right
+Processed 31/1000 - QID: 27CjdRPwZ6bkSmThVynHt4, Correct: washington nationals
+Processed 32/1000 - QID: 27GtM7fKrPGq9BgUibRXog, Correct: sleeps
+Processed 33/1000 - QID: 285MXnFKQWZ8JG8D2z7mis, Correct: ten
+Processed 34/1000 - QID: 28MCx7HftxZgdtuqQqcdtA, Correct: usa
+Processed 35/1000 - QID: 28MpCKuEtHJ7k5aS782udJ, Correct: low tide
+Processed 36/1000 - QID: 28zRXPzGV2aafu7c9mnvi7, Correct: wet
+Processed 37/1000 - QID: 2972Ggqy2w95CYFUJUVegH, Correct: italy
+Processed 38/1000 - QID: 29C9zSREbUamALaQjz3oaJ, Correct: headlights
+Processed 39/1000 - QID: 29GQz3jfvvNvhNmTvfdHqZ, Correct: eating
+Processed 40/1000 - QID: 29HEEGvCYGJhNKYdxLgPV2, Correct: home
+Processed 41/1000 - QID: 29VgB2ivboXv7B6JxARjcg, Correct: water
+Processed 42/1000 - QID: 29egW8WUrZQjVK4hcoyfHp, Correct: visibility
+Processed 43/1000 - QID: 29mDTuu4CzRcDnLGMjPPUt, Correct: tennis balls
+Processed 44/1000 - QID: 29ouBCs2QswSK5kwRGCcjH, Correct: storage
+Processed 45/1000 - QID: 29x8nKziCBrW6gQt4PKwFT, Correct: rented
+Processed 46/1000 - QID: 29xC35SLennUQGvVRPfG9U, Correct: hot
+Processed 47/1000 - QID: 2A3znX3UZJ8tbLoGd2eaUF, Correct: fighting fire
+Processed 48/1000 - QID: 2A7Smsnf5EfKie2on67nuD, Correct: sky
+Processed 49/1000 - QID: 2AGU6KLBbDTXxF9TdUX6je, Correct: to kick
+Processed 50/1000 - QID: 2ASwVZKw8rVbBfp9kMMtR2, Correct: farming
+Processed 51/1000 - QID: 2AtzV9mGidSx3L2Ywurf5a, Correct: catcher
+Processed 52/1000 - QID: 2B7CZNoAuAhQBZtgp3aLsJ, Correct: flip board
+Processed 53/1000 - QID: 2BqX4LUV4EPA3ZnZw9AjSw, Correct: straight
+Processed 54/1000 - QID: 2BruGEviB9jrmMvJhe47Wr, Correct: buying food
+Processed 55/1000 - QID: 2C9Uqrr3U85YBE9Azp5Eja, Correct: air
+Processed 56/1000 - QID: 2CngqYkvnhyTnDDrSFYh3S, Correct: japan
+Processed 57/1000 - QID: 2CoyAWY2B8gJ9DhVfWqZR4, Correct: upper cat
+Processed 58/1000 - QID: 2DVwH39rUB9Re9pU6x7pQ8, Correct: four legs
+Processed 59/1000 - QID: 2DggDb93b89ddhD4ks8UHN, Correct: phone
+Processed 60/1000 - QID: 2Di76pYbZoB2D5TAuxqKXz, Correct: graffiti
+Processed 61/1000 - QID: 2ECi8bHNcnjeCdghvFfTCq, Correct: swim
+Processed 62/1000 - QID: 2EUbaA8LmbwZF3WRGXVJRA, Correct: to inform
+Processed 63/1000 - QID: 2EbZu7iEtdGJzJCeNgwQsG, Correct: camera
+Processed 64/1000 - QID: 2EgWEpcCyB2LEDTEc5LQkC, Correct: dugout
+Processed 65/1000 - QID: 2EjooY7GfUBSDqbKifPdb8, Correct: leg rope
+Processed 66/1000 - QID: 2Et6VPVRsaB7ZNoD5uEhfh, Correct: parking meter
+Processed 67/1000 - QID: 2EyRwb6xcnEdGWYP38dBr5, Correct: life jacket
+Processed 68/1000 - QID: 2Ez3AmPxxsBshAnSCeLm7C, Correct: sword
+Processed 69/1000 - QID: 2F4QUEBvL7D4YeCrjMWtJw, Correct: stringed instrument
+Processed 70/1000 - QID: 2FKBP4dRVvGJvukEQ9a76c, Correct: transport luggage
+Processed 71/1000 - QID: 2FQYhL4vCZP5riVcSEsRdB, Correct: motor
+Processed 72/1000 - QID: 2FSperyeaGTP7m2B8S53G4, Correct: teddy bear
+Processed 73/1000 - QID: 2FgXSubwAUnTtLdGoEWQyi, Correct: green
+Processed 74/1000 - QID: 2Fm3gjfdbGC2WFgXQs54zF, Correct: first
+Processed 75/1000 - QID: 2G43btuthrpLgAq7JDtcDf, Correct: showing off
+Processed 76/1000 - QID: 2G9AJvMhAqWmo85MHJHrVz, Correct: display stand
+Processed 77/1000 - QID: 2GKUn9BGqKQTjVfYDfhhjL, Correct: microphone
+Processed 78/1000 - QID: 2GMAffwJPvDSBZhXkmGvPa, Correct: suit
+Processed 79/1000 - QID: 2GXveGE4Lr5ZvhMq7GQNJQ, Correct: exhibition
+Processed 80/1000 - QID: 2GbNQjqZxokHFcjY7EWW78, Correct: florist
+Processed 81/1000 - QID: 2Gsxvj4m4cy3pC9PqoJpNG, Correct: via horseback
+Processed 82/1000 - QID: 2GtKwL7VMhTpGiGcpgTp2B, Correct: sun protection
+Processed 83/1000 - QID: 2GycmJug2sT6jXAsjnpeYf, Correct: key chains
+Processed 84/1000 - QID: 2HEDoy2SFfwFxBScbVbQqM, Correct: toilet
+Processed 85/1000 - QID: 2HHjJPad78rFXxxE2HVY4K, Correct: right
+Processed 86/1000 - QID: 2HM53uQAH3gzaPkudXTvJj, Correct: tying it
+Processed 87/1000 - QID: 2HUoaEcLEX8KSDsjvY4g8L, Correct: swing
+Processed 88/1000 - QID: 2HamnfFKZ3NefA7VBsm9Wg, Correct: chicken
+Processed 89/1000 - QID: 2HdMkhS8q7QHExjTB59id3, Correct: webbed
+Processed 90/1000 - QID: 2JHdiXdz5wNYxHDo3tLsbQ, Correct: mcdonalds
+Processed 91/1000 - QID: 2JNGou59iXCn3NxR2Ug5wt, Correct: baby moving
+Processed 92/1000 - QID: 2JbbFqFz6QvReaUgNpqAmr, Correct: parrot
+Processed 93/1000 - QID: 2Jd2oFdoS5hpyfMi8wKHxx, Correct: no wheels
+Processed 94/1000 - QID: 2JizQxpcQbViUouNgEYMET, Correct: starting up
+Processed 95/1000 - QID: 2Jxo7EzfEguLnWDuERYVeH, Correct: bottom left
+Processed 96/1000 - QID: 2K74DjwV2oYcPHcN5WfEp3, Correct: gallop
+Processed 97/1000 - QID: 2KESXsxu94YnYqdJNskkgw, Correct: books
+Processed 98/1000 - QID: 2KGXLvnAUL5FwMvGXLJ6pv, Correct: winter
+Processed 99/1000 - QID: 2KKVSWfMUFqbN9HbB9KHzr, Correct: toilet
+Processed 100/1000 - QID: 2KT3TUaz9BE6zGXcsPqRBS, Correct: mascot
+Processed 101/1000 - QID: 2KvcoZ2Hhauw3tWzRbFBV2, Correct: keeping warm
+Processed 102/1000 - QID: 2KxBffd8N4VXfKisowNqNH, Correct: image file
+Processed 103/1000 - QID: 2L75TZTqq3MjHZkKXPULBM, Correct: 2015
+Processed 104/1000 - QID: 2L9AhsqC3g8GKCSzvM8qyq, Correct: video
+Processed 105/1000 - QID: 2LDCipjoCqAACXeiFhgX4w, Correct: quicksilver
+Processed 106/1000 - QID: 2LKyyXzRnjLrrAePAcfDm3, Correct: double-decker
+Processed 107/1000 - QID: 2LUfcGhjQpb3hc2KiMnSoh, Correct: outdoor hard
+Processed 108/1000 - QID: 2LbzYAXpBvtgXT4NoH9wVN, Correct: urban
+Processed 109/1000 - QID: 2LmJjHgSk3dz9kt9tYCrhF, Correct: bonaire
+Processed 110/1000 - QID: 2MDzJQaYUiTxWxpJmAmgFQ, Correct: chair
+Processed 111/1000 - QID: 2MsJhFXZuWPHk27VQgBQfp, Correct: toilet flapper
+Processed 112/1000 - QID: 2MuNNjofWHs6BuHn2MGszZ, Correct: visibility
+Processed 113/1000 - QID: 2N8UpuspqzA37Ch5ZkLhPY, Correct: electrical power
+Processed 114/1000 - QID: 2N9EmesVddbgTxGytF98GB, Correct: car safari
+Processed 115/1000 - QID: 2NKrCrQRfovHrvpo7DuUGF, Correct: gate
+Processed 116/1000 - QID: 2NTPdd2vgHZomFccHKsG5p, Correct: stand waiting
+Processed 117/1000 - QID: 2NU2mVhjgHK6TRxPPBoCoh, Correct: peeler
+Processed 118/1000 - QID: 2NtoLZpK2LeBy78XwyUUXC, Correct: swimming
+Processed 119/1000 - QID: 2P53cFpZVumY6quP7QbqiA, Correct: their shoes
+Processed 120/1000 - QID: 2P5ZPboExGbqsRf9mj5Jx5, Correct: raspberry
+Processed 121/1000 - QID: 2P6y5WUsJGoWaLacTsiM6b, Correct: taking home
+Processed 122/1000 - QID: 2PJ3yj9TxbFNbW4K7zsgfr, Correct: bikers
+Processing dataset:  12%|█▏        | 123/1000 [1:36:20<20:19:43, 83.45s/sample]Processing dataset:  12%|█▏        | 124/1000 [1:37:22<18:43:07, 76.93s/sample]Processing dataset:  12%|█▎        | 125/1000 [1:39:05<20:36:26, 84.79s/sample]Processing dataset:  13%|█▎        | 126/1000 [1:40:02<18:33:06, 76.41s/sample]Processing dataset:  13%|█▎        | 127/1000 [1:41:20<18:41:59, 77.11s/sample]Processing dataset:  13%|█▎        | 128/1000 [1:43:29<22:24:33, 92.52s/sample]Processing dataset:  13%|█▎        | 129/1000 [1:44:32<20:16:25, 83.79s/sample]Processing dataset:  13%|█▎        | 130/1000 [1:46:08<21:06:25, 87.34s/sample]Processing dataset:  13%|█▎        | 131/1000 [1:47:04<18:50:59, 78.09s/sample]Processing dataset:  13%|█▎        | 132/1000 [1:49:36<24:09:59, 100.23s/sample]Processing dataset:  13%|█▎        | 133/1000 [1:51:25<24:43:52, 102.69s/sample]Processing dataset:  13%|█▎        | 134/1000 [1:53:15<25:14:17, 104.92s/sample]Processing dataset:  14%|█▎        | 135/1000 [1:55:27<27:09:35, 113.03s/sample]Processing dataset:  14%|█▎        | 136/1000 [1:57:33<28:06:53, 117.15s/sample]Processing dataset:  14%|█▎        | 137/1000 [1:58:35<24:06:19, 100.56s/sample]Processing dataset:  14%|█▍        | 138/1000 [1:59:42<21:40:42, 90.54s/sample] Processing dataset:  14%|█▍        | 139/1000 [2:01:02<20:51:04, 87.18s/sample]Processing dataset:  14%|█▍        | 140/1000 [2:02:07<19:17:03, 80.73s/sample]Processing dataset:  14%|█▍        | 141/1000 [2:03:17<18:29:04, 77.47s/sample]Processing dataset:  14%|█▍        | 142/1000 [2:04:22<17:33:00, 73.64s/sample]Processing dataset:  14%|█▍        | 143/1000 [2:05:32<17:18:01, 72.67s/sample]Processing dataset:  14%|█▍        | 144/1000 [2:07:27<20:14:32, 85.13s/sample]Processing dataset:  14%|█▍        | 145/1000 [2:09:23<22:25:31, 94.42s/sample]Processing dataset:  15%|█▍        | 146/1000 [2:11:51<26:15:54, 110.72s/sample]Processing dataset:  15%|█▍        | 147/1000 [2:12:57<23:00:05, 97.08s/sample] Processing dataset:  15%|█▍        | 148/1000 [2:14:02<20:43:25, 87.56s/sample]Processing dataset:  15%|█▍        | 149/1000 [2:15:57<22:36:32, 95.64s/sample]Processing dataset:  15%|█▌        | 150/1000 [2:17:05<20:39:21, 87.48s/sample]Processing dataset:  15%|█▌        | 151/1000 [2:19:17<23:47:54, 100.91s/sample]Processing dataset:  15%|█▌        | 152/1000 [2:21:47<27:13:03, 115.55s/sample]Processing dataset:  15%|█▌        | 153/1000 [2:24:12<29:18:01, 124.54s/sample]Processing dataset:  15%|█▌        | 154/1000 [2:25:38<26:31:07, 112.85s/sample]Processing dataset:  16%|█▌        | 155/1000 [2:26:54<23:51:15, 101.63s/sample]Processing dataset:  16%|█▌        | 156/1000 [2:29:03<25:47:46, 110.03s/sample]Processing dataset:  16%|█▌        | 157/1000 [2:30:21<23:31:12, 100.44s/sample]Processing dataset:  16%|█▌        | 158/1000 [2:31:32<21:26:25, 91.67s/sample] Processing dataset:  16%|█▌        | 159/1000 [2:33:53<24:51:47, 106.43s/sample]Processing dataset:  16%|█▌        | 160/1000 [2:36:29<28:15:04, 121.08s/sample]Processing dataset:  16%|█▌        | 161/1000 [2:38:26<27:56:55, 119.92s/sample]Processing dataset:  16%|█▌        | 162/1000 [2:39:56<25:50:19, 111.00s/sample]Processing dataset:  16%|█▋        | 163/1000 [2:42:33<29:00:04, 124.74s/sample]Processing dataset:  16%|█▋        | 164/1000 [2:43:47<25:28:44, 109.72s/sample]Processing dataset:  16%|█▋        | 165/1000 [2:45:09<23:27:40, 101.15s/sample]Processing dataset:  17%|█▋        | 166/1000 [2:46:28<21:55:54, 94.67s/sample] Processing dataset:  17%|█▋        | 167/1000 [2:48:40<24:28:11, 105.75s/sample]Processing dataset:  17%|█▋        | 168/1000 [2:49:50<21:59:49, 95.18s/sample] Processing dataset:  17%|█▋        | 169/1000 [2:51:14<21:11:01, 91.77s/sample]Processing dataset:  17%|█▋        | 170/1000 [2:53:19<23:28:27, 101.82s/sample]Processing dataset:  17%|█▋        | 171/1000 [2:54:43<22:09:39, 96.24s/sample] Processing dataset:  17%|█▋        | 172/1000 [2:57:23<26:33:41, 115.49s/sample]Processing dataset:  17%|█▋        | 173/1000 [3:00:13<30:18:34, 131.94s/sample]Processing dataset:  17%|█▋        | 174/1000 [3:01:40<27:09:43, 118.38s/sample]Processing dataset:  18%|█▊        | 175/1000 [3:02:53<24:00:06, 104.73s/sample]Processing dataset:  18%|█▊        | 176/1000 [3:04:04<21:37:45, 94.50s/sample] Processing dataset:  18%|█▊        | 177/1000 [3:06:08<23:41:24, 103.63s/sample]Processing dataset:  18%|█▊        | 178/1000 [3:07:36<22:34:49, 98.89s/sample] Processing dataset:  18%|█▊        | 179/1000 [3:09:04<21:45:47, 95.43s/sample]Processing dataset:  18%|█▊        | 180/1000 [3:10:37<21:37:22, 94.93s/sample]Processing dataset:  18%|█▊        | 181/1000 [3:13:04<25:07:55, 110.47s/sample]Processing dataset:  18%|█▊        | 182/1000 [3:14:31<23:30:13, 103.44s/sample]Processing dataset:  18%|█▊        | 183/1000 [3:17:18<27:48:02, 122.50s/sample]Processing dataset:  18%|█▊        | 184/1000 [3:20:18<31:39:26, 139.66s/sample]Processing dataset:  18%|█▊        | 185/1000 [3:22:56<32:51:32, 145.14s/sample]Processing dataset:  19%|█▊        | 186/1000 [3:24:16<28:25:46, 125.73s/sample]Processing dataset:  19%|█▊        | 187/1000 [3:25:35<25:13:08, 111.67s/sample]Processing dataset:  19%|█▉        | 188/1000 [3:27:09<23:58:49, 106.32s/sample]Processing dataset:  19%|█▉        | 189/1000 [3:29:33<26:28:48, 117.54s/sample]Processing dataset:  19%|█▉        | 190/1000 [3:30:58<24:17:12, 107.94s/sample]Processing dataset:  19%|█▉        | 191/1000 [3:32:23<22:43:08, 101.10s/sample]Processing dataset:  19%|█▉        | 192/1000 [3:35:01<26:31:18, 118.17s/sample]Processing dataset:  19%|█▉        | 193/1000 [3:37:47<29:39:08, 132.28s/sample]Processing dataset:  19%|█▉        | 194/1000 [3:39:17<26:48:45, 119.76s/sample]Processing dataset:  20%|█▉        | 195/1000 [3:41:54<29:16:43, 130.94s/sample]Processing dataset:  20%|█▉        | 196/1000 [3:44:30<30:54:07, 138.37s/sample]Processing dataset:  20%|█▉        | 197/1000 [3:46:04<27:54:26, 125.11s/sample]Processing dataset:  20%|█▉        | 198/1000 [3:49:30<33:14:58, 149.25s/sample]Processing dataset:  20%|█▉        | 199/1000 [3:50:56<29:01:52, 130.48s/sample]Processing dataset:  20%|██        | 200/1000 [3:53:51<31:58:25, 143.88s/sample]Processing dataset:  20%|██        | 201/1000 [3:56:48<34:05:40, 153.62s/sample]Processing dataset:  20%|██        | 202/1000 [3:58:15<29:38:24, 133.71s/sample]Processing dataset:  20%|██        | 203/1000 [3:59:54<27:16:46, 123.22s/sample]Processing dataset:  20%|██        | 204/1000 [4:01:30<25:26:10, 115.04s/sample]Processing dataset:  20%|██        | 205/1000 [4:02:54<23:21:41, 105.79s/sample]Processing dataset:  21%|██        | 206/1000 [4:06:01<28:44:40, 130.33s/sample]Processing dataset:  21%|██        | 207/1000 [4:07:33<26:08:51, 118.70s/sample]Processing dataset:  21%|██        | 208/1000 [4:09:04<24:15:40, 110.28s/sample]Processing dataset:  21%|██        | 209/1000 [4:12:46<31:35:34, 143.79s/sample]Processing dataset:  21%|██        | 210/1000 [4:14:53<30:26:45, 138.74s/sample]Processing dataset:  21%|██        | 211/1000 [4:16:28<27:34:50, 125.84s/sample]Processing dataset:  21%|██        | 212/1000 [4:19:29<31:06:50, 142.15s/sample]Processing dataset:  21%|██▏       | 213/1000 [4:22:27<33:25:30, 152.90s/sample]Processing dataset:  21%|██▏       | 214/1000 [4:25:15<34:23:40, 157.53s/sample]Processing dataset:  22%|██▏       | 215/1000 [4:26:51<30:19:36, 139.08s/sample]Processing dataset:  22%|██▏       | 216/1000 [4:28:36<28:03:59, 128.88s/sample]Processing dataset:  22%|██▏       | 217/1000 [4:30:13<25:58:12, 119.40s/sample]Processing dataset:  22%|██▏       | 218/1000 [4:31:38<23:39:40, 108.93s/sample]Processing dataset:  22%|██▏       | 219/1000 [4:35:03<29:52:47, 137.73s/sample]Processing dataset:  22%|██▏       | 220/1000 [4:36:48<27:44:19, 128.03s/sample]Processing dataset:  22%|██▏       | 221/1000 [4:38:24<25:38:17, 118.48s/sample]Processing dataset:  22%|██▏       | 222/1000 [4:41:46<31:00:49, 143.51s/sample]Processing dataset:  22%|██▏       | 223/1000 [4:43:27<28:11:43, 130.64s/sample]Processing dataset:  22%|██▏       | 224/1000 [4:45:05<26:05:43, 121.06s/sample]Processing dataset:  22%|██▎       | 225/1000 [4:46:41<24:25:45, 113.48s/sample]Processing dataset:  23%|██▎       | 226/1000 [4:48:31<24:08:39, 112.30s/sample]Processing dataset:  23%|██▎       | 227/1000 [4:51:33<28:36:18, 133.22s/sample]Processing dataset:  23%|██▎       | 228/1000 [4:54:30<31:23:49, 146.41s/sample]Processing dataset:  23%|██▎       | 229/1000 [4:57:06<31:58:25, 149.29s/sample]Processing dataset:  23%|██▎       | 230/1000 [4:59:02<29:48:35, 139.37s/sample]Processing dataset:  23%|██▎       | 231/1000 [5:00:55<28:05:15, 131.49s/sample]Processing dataset:  23%|██▎       | 232/1000 [5:02:41<26:23:38, 123.72s/sample]Processing dataset:  23%|██▎       | 233/1000 [5:05:12<28:07:37, 132.02s/sample]Processing dataset:  23%|██▎       | 234/1000 [5:08:35<32:34:20, 153.08s/sample]Processing dataset:  24%|██▎       | 235/1000 [5:10:58<31:53:56, 150.11s/sample]Processing dataset:  24%|██▎       | 236/1000 [5:13:07<30:29:43, 143.70s/sample]Processing dataset:  24%|██▎       | 237/1000 [5:14:58<28:25:51, 134.14s/sample]Processing dataset:  24%|██▍       | 238/1000 [5:16:44<26:34:34, 125.56s/sample]Processing dataset:  24%|██▍       | 239/1000 [5:18:40<25:55:29, 122.64s/sample]Processing dataset:  24%|██▍       | 240/1000 [5:22:18<31:58:06, 151.43s/sample]Processing dataset:  24%|██▍       | 241/1000 [5:24:55<32:14:57, 152.96s/sample]Processing dataset:  24%|██▍       | 242/1000 [5:29:29<39:51:11, 189.28s/sample]Processed 123/1000 - QID: 2PntAN5muV4rR9YetMfHVF, Correct: toothbrush
+Processed 124/1000 - QID: 2PxT93kHzLqNfsc2VsGXpt, Correct: carrot
+Processed 125/1000 - QID: 2Q2DpW5agkNZPfpnfmKoKG, Correct: playing videogames
+Processed 126/1000 - QID: 2Q2jgfUMRfynLAubuBwUe7, Correct: right
+Processed 127/1000 - QID: 2Q9b7pYG8Ys5oHBpf2ursg, Correct: banana
+Processed 128/1000 - QID: 2QKuV8yUJRkDQFcTZYJWtn, Correct: water
+Processed 129/1000 - QID: 2QvtQLDQkaZtppL4dGRLUk, Correct: pier
+Processed 130/1000 - QID: 2QvucSvxg9jyNCYPJPhtt9, Correct: cars
+Processed 131/1000 - QID: 2RUVZT35KFMhnZ5tJUvPLG, Correct: both
+Processed 132/1000 - QID: 2Roi29PDttqQkqWiaH85d9, Correct: warmer there
+Processed 133/1000 - QID: 2SBJvBMzDnqCKdYhKZ3neR, Correct: taking selfie
+Processed 134/1000 - QID: 2SF65rAjWXnGqTejjzqrSe, Correct: quads
+Processed 135/1000 - QID: 2SiwCweoPGJjmZWJ2WkTas, Correct: passion
+Processed 136/1000 - QID: 2SraeiEVzojURtZSV3kxTi, Correct: sponsor
+Processed 137/1000 - QID: 2SzcYAHFFkcC7mEft39MXc, Correct: front
+Processed 138/1000 - QID: 2T4D4R9KPffjpfhwjcjev7, Correct: squid
+Processed 139/1000 - QID: 2TFWpwJqcuEe3PzHD8Lnug, Correct: stocks
+Processed 140/1000 - QID: 2TGQN2UFcs6JKAzQuv7iSa, Correct: boat
+Processed 141/1000 - QID: 2TaLEC5vqhgu8XzfBZPuK8, Correct: from adult
+Processed 142/1000 - QID: 2TwwWphpLumQMpWvNiVp2C, Correct: 255
+Processed 143/1000 - QID: 2U4yQYLucLxMyLz63LtgbF, Correct: hot
+Processed 144/1000 - QID: 2UMschzckNvKn5VHTeFPYF, Correct: walk light
+Processed 145/1000 - QID: 2UPny9XTfkz2EBXPmxDXQB, Correct: gas mask
+Processed 146/1000 - QID: 2UWWRJLgL24afa9c67Y5sC, Correct: art fair
+Processed 147/1000 - QID: 2UooNt5xSReD35ydnRyqMm, Correct: biography
+Processed 148/1000 - QID: 2UsWr3RH9modhAASzauEXD, Correct: produce vendor
+Processed 149/1000 - QID: 2V57SaZsLCEJxfKW7bcr3u, Correct: castle
+Processed 150/1000 - QID: 2V7icML5PcP6ymWQKNHhH5, Correct: drivers
+Processed 151/1000 - QID: 2Vh52Htu8XFWfh9c922MMS, Correct: japanese
+Processed 152/1000 - QID: 2VjFrmK7DbaoCRjgJd7HaW, Correct: angles
+Processed 153/1000 - QID: 2Weup6NrxpDsXimuuNThgg, Correct: sharpener
+Processed 154/1000 - QID: 2WfXPsfn2vHDMcfKPTE46U, Correct: donkey kong
+Processed 155/1000 - QID: 2WoPXrE32zYmXEgeVEJeG4, Correct: old fashioned
+Processed 156/1000 - QID: 2YCLfVzTgZMUZGmK6uE79Y, Correct: office
+Processed 157/1000 - QID: 2YJ8XxsCtysLu5b9CtwNkC, Correct: lifeguards
+Processed 158/1000 - QID: 2YKj8xh576AnSDMoS9YJXN, Correct: flying kite
+Processed 159/1000 - QID: 2YLFuMTDUehPNDmgCzXGDP, Correct: are posing
+Processed 160/1000 - QID: 2YUiPaiEhxV8P2qNMQEYdR, Correct: wine
+Processed 161/1000 - QID: 2Yk4XskvmwNEjwp2tqRKuA, Correct: north
+Processed 162/1000 - QID: 2YoeVJKZ7Agxen9pgXTfzF, Correct: winter
+Processed 163/1000 - QID: 2ZMA2ZF7knbw4NzScvpNEZ, Correct: skateboard fall
+Processed 164/1000 - QID: 2ZPcMJZusRLGonvRwwNo9T, Correct: u
+Processed 165/1000 - QID: 2ZavE2nqLuhLjkjBrN2QcJ, Correct: is resting
+Processed 166/1000 - QID: 2ZmkSYntJcm5pfucM78SU6, Correct: riding
+Processed 167/1000 - QID: 2ZnuoiULmmvxWx5y5mSnyq, Correct: suburban
+Processed 168/1000 - QID: 2ZoHeCYcmmYo5owS6Fa59V, Correct: fruit
+Processed 169/1000 - QID: 2a2bRG3peGyaX6CRff9UuP, Correct: baseball
+Processed 170/1000 - QID: 2aDToHqZbXViJwi6PhxwJy, Correct: sheep
+Processed 171/1000 - QID: 2aidh4PEccrguoUpbd4gsy, Correct: 1995-2004
+Processed 172/1000 - QID: 2av2cYqAMvRApmn29DAaaS, Correct: they're skiing
+Processed 173/1000 - QID: 2awVVpETbTrjFtzQpRCv8Q, Correct: to inform
+Processed 174/1000 - QID: 2bC9L3qFFfK4xWBp2NWACz, Correct: fries
+Processed 175/1000 - QID: 2bJ57CrqDrdgr7qrxQuLPx, Correct: man
+Processed 176/1000 - QID: 2bQNkvRjDLWbSyBAW3PvgY, Correct: video
+Processed 177/1000 - QID: 2bUxJCA9zzL2yXMeNPBgos, Correct: shoes
+Processed 178/1000 - QID: 2bXw7EYkxkbUukEPbqtcaJ, Correct: dsl
+Processed 179/1000 - QID: 2cVU4M9aKXRAw6mrRLVzG5, Correct: sleeping
+Processed 180/1000 - QID: 2cYua4b8qvJmTbjSiAWoXG, Correct: driving
+Processed 181/1000 - QID: 2cZ9VshVCUFFgs23rqm5zu, Correct: to sleep
+Processed 182/1000 - QID: 2cbrFP6dHAyaQRb993hX27, Correct: tom brady
+Processed 183/1000 - QID: 2cd24GfN9GpcRmk3dWnhfL, Correct: to balance
+Processed 184/1000 - QID: 2cuqjPUdUM7rT7sK842Gib, Correct: romantically
+Processed 185/1000 - QID: 2d5nqEbMJNzd6Vg5Edb4zQ, Correct: diwali
+Processed 186/1000 - QID: 2d9FkhiuZmENPEgimsG27Z, Correct: palm tree
+Processed 187/1000 - QID: 2dMHR5VQBeP483myqvCWr2, Correct: elephant
+Processed 188/1000 - QID: 2dTU6qSHdxDn8fMcm4EgAh, Correct: reading
+Processed 189/1000 - QID: 2dXAXiwvmmpdT2y3URaoQp, Correct: car wheels
+Processed 190/1000 - QID: 2dyQCZVjJXqiB8x5ZNzyCX, Correct: hotel
+Processed 191/1000 - QID: 2eJ5hZRn6k4Z8erZAxMyCL, Correct: adidas
+Processed 192/1000 - QID: 2eK8GgdxPLv7VP9DENoJsE, Correct: trees
+Processed 193/1000 - QID: 2eNMJcsKCSD3ZHJHmjzwN9, Correct: to sit
+Processed 194/1000 - QID: 2ePEgq38nSREAQdcap5rdU, Correct: fake blood
+Processed 195/1000 - QID: 2egjHpkd8Dj4z5GTX29hFj, Correct: catch frisbee
+Processed 196/1000 - QID: 2f93vsMWnETonopbuokJpR, Correct: carrot
+Processed 197/1000 - QID: 2fAaN6uaKhVoPiTQEhuGMe, Correct: meatballs
+Processed 198/1000 - QID: 2fQQtruJvQuDugUUpLPBTv, Correct: nobody around
+Processed 199/1000 - QID: 2fY3HPZgrnQki4N8e2JcA9, Correct: dinner
+Processed 200/1000 - QID: 2faSWUYbSTLYGyGrEMUsjE, Correct: lesson
+Processed 201/1000 - QID: 2fvHcW7pq5CUy8dcHdxLg5, Correct: crib
+Processed 202/1000 - QID: 2fw64fNawBgUiCS3Q8e4Gz, Correct: in truck
+Processed 203/1000 - QID: 2g5XwKBwm6EykruiNjLxbR, Correct: cross
+Processed 204/1000 - QID: 2g7JexNfEqCcdoTGQyUxa5, Correct: top left
+Processed 205/1000 - QID: 2gM9uk6xXbgQH5CLu2kVhL, Correct: softball
+Processed 206/1000 - QID: 2gQhA4mvjvyK5e4snBhhS6, Correct: lime tree
+Processed 207/1000 - QID: 2h2Gk7SBLrkbJKmJdoGaGf, Correct: hershey's kisses
+Processed 208/1000 - QID: 2h2PKuqShg6DHoyk9Yk92B, Correct: third base
+Processed 209/1000 - QID: 2h6a2jBxk4AenDEVNDorHm, Correct: frying
+Processed 210/1000 - QID: 2hF5hbR9xXAGKB3FCL2kYi, Correct: kick ball
+Processed 211/1000 - QID: 2hPiuCM5x2AsnwYRbbBgoP, Correct: skates
+Processed 212/1000 - QID: 2hTF5beuHN5qtU4A4vjdpQ, Correct: mating details
+Processed 213/1000 - QID: 2hi9B5XRjJiGRubKuWN86E, Correct: motorcycle parade
+Processed 214/1000 - QID: 2hmBV6cU4oZPkKSsy4riPA, Correct: tennis ball
+Processed 215/1000 - QID: 2i6X43BtxZiuiFByMcE7tx, Correct: c
+Processed 216/1000 - QID: 2i9oGcGomsHkxTGQcDNLqg, Correct: carrot
+Processed 217/1000 - QID: 2iMfro3PsLGb6fBkfCauzf, Correct: husky
+Processed 218/1000 - QID: 2iUS23H6MfnnYfHddA4o2s, Correct: cross
+Processed 219/1000 - QID: 2icnVjovXa6yTr3cAJwaxD, Correct: collision
+Processed 220/1000 - QID: 2idNVWgEPGkhxBQEcXXAhR, Correct: clay
+Processed 221/1000 - QID: 2iiEs5EqxQHc7Bgqf9b7j4, Correct: oranges
+Processed 222/1000 - QID: 2iyXffYQGw9trYxBALkkgA, Correct: john webber
+Processed 223/1000 - QID: 2jLWwjQVsrjUxtatEvx6nM, Correct: dog
+Processed 224/1000 - QID: 2jVxmNziSRBMRcqc8ogmHH, Correct: bikini
+Processed 225/1000 - QID: 2jXjxP2xTX6CeYAASqksa4, Correct: recreation
+Processed 226/1000 - QID: 2jezXbAdgtzbLo8cmKk6Qy, Correct: sells food
+Processed 227/1000 - QID: 2jmKA8paLFHKnXxN86f6Ja, Correct: 1606
+Processed 228/1000 - QID: 2k9KTy5hmfGhrUiPwZgMba, Correct: photography
+Processed 229/1000 - QID: 2kPt5KZso5oeE845N8Tghx, Correct: cyclist
+Processed 230/1000 - QID: 2kS3WozT56ua84kA3kBFCq, Correct: workers
+Processed 231/1000 - QID: 2kSq6yFLdFwAN2eqebrhae, Correct: sweatpants
+Processed 232/1000 - QID: 2kXbJSFY92afqGVwXmj358, Correct: skull dish
+Processed 233/1000 - QID: 2kZRSW6FbFMS52EWY5Jg2K, Correct: higher
+Processed 234/1000 - QID: 2kr95K8WFZkN4kAtkDMJYh, Correct: hydroponics
+Processed 235/1000 - QID: 2ksCvFRCeHy7kJKuo58Bn5, Correct: three
+Processed 236/1000 - QID: 2mepZf3dZHz7C4xvds6qYV, Correct: kitchen
+Processed 237/1000 - QID: 2mrBfDVMPzD2TCDpEKZoCQ, Correct: batter
+Processed 238/1000 - QID: 2mvRzfVCWUHgnQvSEUyJXi, Correct: x
+Processed 239/1000 - QID: 2npuLtjjUqnW9sp9RsGZGT, Correct: transport trash
+Processed 240/1000 - QID: 2nsdYDqygVPg8w84tHWHQ2, Correct: to plow
+Processed 241/1000 - QID: 2o2WR3QrwogfzuvQsUQnT9, Correct: running
+Processed 242/1000 - QID: 2oCb2CXagaKxPLcsTU8sXu, Correct: stir fried
+Processing dataset:  24%|██▍       | 243/1000 [5:31:26<35:14:54, 167.63s/sample]Processing dataset:  24%|██▍       | 244/1000 [5:33:21<31:52:55, 151.82s/sample]Processing dataset:  24%|██▍       | 245/1000 [5:35:09<29:03:51, 138.58s/sample]Processing dataset:  25%|██▍       | 246/1000 [5:36:59<27:16:43, 130.24s/sample]Processing dataset:  25%|██▍       | 247/1000 [5:38:48<25:51:57, 123.66s/sample]Processing dataset:  25%|██▍       | 248/1000 [5:40:42<25:14:02, 120.80s/sample]Processing dataset:  25%|██▍       | 249/1000 [5:42:42<25:10:24, 120.67s/sample]Processing dataset:  25%|██▌       | 250/1000 [5:44:30<24:19:42, 116.78s/sample]Processing dataset:  25%|██▌       | 251/1000 [5:47:42<28:58:40, 139.28s/sample]Processing dataset:  25%|██▌       | 252/1000 [5:51:18<33:45:26, 162.47s/sample]Processing dataset:  25%|██▌       | 253/1000 [5:53:07<30:21:25, 146.30s/sample]Processing dataset:  25%|██▌       | 254/1000 [5:55:03<28:26:11, 137.23s/sample]Processing dataset:  26%|██▌       | 255/1000 [5:56:58<27:01:53, 130.62s/sample]Processing dataset:  26%|██▌       | 256/1000 [5:58:54<26:03:13, 126.07s/sample]Processing dataset:  26%|██▌       | 257/1000 [6:00:52<25:32:43, 123.77s/sample]Processing dataset:  26%|██▌       | 258/1000 [6:02:49<25:07:12, 121.88s/sample]Processing dataset:  26%|██▌       | 259/1000 [6:06:20<30:34:38, 148.55s/sample]Processing dataset:  26%|██▌       | 260/1000 [6:08:34<29:38:32, 144.21s/sample]Processing dataset:  26%|██▌       | 261/1000 [6:11:30<31:32:56, 153.69s/sample]Processing dataset:  26%|██▌       | 262/1000 [6:13:16<28:33:52, 139.34s/sample]Processing dataset:  26%|██▋       | 263/1000 [6:15:18<27:26:30, 134.04s/sample]Processing dataset:  26%|██▋       | 264/1000 [6:17:20<26:42:13, 130.62s/sample]Processing dataset:  26%|██▋       | 265/1000 [6:21:05<32:26:56, 158.93s/sample]Processing dataset:  27%|██▋       | 266/1000 [6:23:08<30:12:42, 148.18s/sample]Processing dataset:  27%|██▋       | 267/1000 [6:26:35<33:45:13, 165.78s/sample]Processing dataset:  27%|██▋       | 268/1000 [6:28:51<31:53:10, 156.82s/sample]Processing dataset:  27%|██▋       | 269/1000 [6:31:29<31:53:07, 157.03s/sample]Processing dataset:  27%|██▋       | 270/1000 [6:35:06<35:29:37, 175.04s/sample]Processing dataset:  27%|██▋       | 271/1000 [6:37:16<32:44:53, 161.72s/sample]Processing dataset:  27%|██▋       | 272/1000 [6:41:11<37:06:58, 183.54s/sample]Processing dataset:  27%|██▋       | 273/1000 [6:44:35<38:17:54, 189.65s/sample]Processing dataset:  27%|██▋       | 274/1000 [6:46:41<34:25:33, 170.71s/sample]Processing dataset:  28%|██▊       | 275/1000 [6:48:38<31:08:32, 154.64s/sample]Processing dataset:  28%|██▊       | 276/1000 [6:51:58<33:48:14, 168.09s/sample]Processing dataset:  28%|██▊       | 277/1000 [6:55:51<37:40:15, 187.57s/sample]Processing dataset:  28%|██▊       | 278/1000 [6:58:00<34:08:00, 170.20s/sample]Processing dataset:  28%|██▊       | 279/1000 [7:00:28<32:43:42, 163.42s/sample]Processing dataset:  28%|██▊       | 280/1000 [7:02:21<29:38:46, 148.23s/sample]Processing dataset:  28%|██▊       | 281/1000 [7:04:26<28:13:58, 141.36s/sample]Processing dataset:  28%|██▊       | 282/1000 [7:07:55<32:14:35, 161.66s/sample]Processing dataset:  28%|██▊       | 283/1000 [7:11:15<34:27:11, 172.99s/sample]Processing dataset:  28%|██▊       | 284/1000 [7:15:53<40:41:52, 204.63s/sample]Processing dataset:  28%|██▊       | 285/1000 [7:17:56<35:44:38, 179.97s/sample]Processing dataset:  29%|██▊       | 286/1000 [7:19:43<31:22:20, 158.18s/sample]Processing dataset:  29%|██▊       | 287/1000 [7:21:48<29:21:57, 148.27s/sample]Processing dataset:  29%|██▉       | 288/1000 [7:24:04<28:34:12, 144.46s/sample]Processing dataset:  29%|██▉       | 289/1000 [7:28:15<34:51:37, 176.51s/sample]Processing dataset:  29%|██▉       | 290/1000 [7:29:59<30:30:54, 154.72s/sample]Processing dataset:  29%|██▉       | 291/1000 [7:33:20<33:13:12, 168.68s/sample]Processing dataset:  29%|██▉       | 292/1000 [7:38:22<41:01:00, 208.56s/sample]Processing dataset:  29%|██▉       | 293/1000 [7:40:29<36:11:06, 184.25s/sample]Processing dataset:  29%|██▉       | 294/1000 [7:42:32<32:32:24, 165.93s/sample]Processing dataset:  30%|██▉       | 295/1000 [7:46:51<37:57:14, 193.81s/sample]Processing dataset:  30%|██▉       | 296/1000 [7:49:01<34:10:24, 174.75s/sample]Processing dataset:  30%|██▉       | 297/1000 [7:51:07<31:14:09, 159.96s/sample]Processing dataset:  30%|██▉       | 298/1000 [7:53:02<28:33:10, 146.42s/sample]Processing dataset:  30%|██▉       | 299/1000 [7:55:07<27:17:26, 140.15s/sample]Processing dataset:  30%|███       | 300/1000 [7:59:55<35:51:27, 184.41s/sample]Processing dataset:  30%|███       | 301/1000 [8:02:06<32:42:56, 168.49s/sample]Processing dataset:  30%|███       | 302/1000 [8:06:28<38:04:00, 196.33s/sample]Processing dataset:  30%|███       | 303/1000 [8:09:58<38:49:10, 200.50s/sample]Processing dataset:  30%|███       | 304/1000 [8:12:18<35:16:18, 182.44s/sample]Processing dataset:  30%|███       | 305/1000 [8:17:19<42:05:11, 218.00s/sample]Processing dataset:  31%|███       | 306/1000 [8:19:41<37:35:46, 195.02s/sample]Processing dataset:  31%|███       | 307/1000 [8:23:03<37:57:35, 197.19s/sample]Processing dataset:  31%|███       | 308/1000 [8:27:38<42:24:41, 220.64s/sample]Processing dataset:  31%|███       | 309/1000 [8:29:53<37:25:56, 195.02s/sample]Processing dataset:  31%|███       | 310/1000 [8:32:06<33:45:54, 176.17s/sample]Processing dataset:  31%|███       | 311/1000 [8:34:06<30:29:59, 159.36s/sample]Processing dataset:  31%|███       | 312/1000 [8:37:34<33:15:24, 174.02s/sample]Processing dataset:  31%|███▏      | 313/1000 [8:43:15<42:47:51, 224.27s/sample]Processing dataset:  31%|███▏      | 314/1000 [8:48:21<47:22:23, 248.61s/sample]Processing dataset:  32%|███▏      | 315/1000 [8:50:43<41:12:53, 216.60s/sample]Processing dataset:  32%|███▏      | 316/1000 [8:52:56<36:22:38, 191.46s/sample]Processing dataset:  32%|███▏      | 317/1000 [8:55:02<32:36:47, 171.90s/sample]Processing dataset:  32%|███▏      | 318/1000 [8:58:44<35:25:54, 187.03s/sample]Processing dataset:  32%|███▏      | 319/1000 [9:01:00<32:29:06, 171.73s/sample]Processing dataset:  32%|███▏      | 320/1000 [9:03:33<31:21:02, 165.97s/sample]Processing dataset:  32%|███▏      | 321/1000 [9:06:06<30:36:52, 162.32s/sample]Processing dataset:  32%|███▏      | 322/1000 [9:10:04<34:47:33, 184.74s/sample]Processing dataset:  32%|███▏      | 323/1000 [9:12:32<32:42:11, 173.90s/sample]Processing dataset:  32%|███▏      | 324/1000 [9:14:49<30:35:34, 162.92s/sample]Processing dataset:  32%|███▎      | 325/1000 [9:18:53<35:06:03, 187.21s/sample]Processing dataset:  33%|███▎      | 326/1000 [9:22:27<36:31:00, 195.05s/sample]Processing dataset:  33%|███▎      | 327/1000 [9:24:51<33:36:16, 179.76s/sample]Processing dataset:  33%|███▎      | 328/1000 [9:27:07<31:07:10, 166.71s/sample]Processing dataset:  33%|███▎      | 329/1000 [9:30:07<31:47:19, 170.55s/sample]Processing dataset:  33%|███▎      | 330/1000 [9:32:27<30:02:25, 161.41s/sample]Processing dataset:  33%|███▎      | 331/1000 [9:38:11<40:11:09, 216.25s/sample]Processing dataset:  33%|███▎      | 332/1000 [9:40:38<36:18:33, 195.68s/sample]Processing dataset:  33%|███▎      | 333/1000 [9:43:15<34:05:10, 183.97s/sample]Processing dataset:  33%|███▎      | 334/1000 [9:45:44<32:05:13, 173.44s/sample]Processing dataset:  34%|███▎      | 335/1000 [9:50:16<37:31:30, 203.14s/sample]Processing dataset:  34%|███▎      | 336/1000 [9:52:40<34:08:42, 185.12s/sample]Processing dataset:  34%|███▎      | 337/1000 [9:55:34<33:31:51, 182.07s/sample]Processing dataset:  34%|███▍      | 338/1000 [9:58:22<32:40:42, 177.71s/sample]Processing dataset:  34%|███▍      | 339/1000 [10:00:47<30:47:54, 167.74s/sample]Processing dataset:  34%|███▍      | 340/1000 [10:03:12<29:30:59, 161.00s/sample]Processing dataset:  34%|███▍      | 341/1000 [10:06:02<30:00:05, 163.89s/sample]Processing dataset:  34%|███▍      | 342/1000 [10:08:36<29:23:52, 160.84s/sample]Processing dataset:  34%|███▍      | 343/1000 [10:13:56<38:04:54, 208.67s/sample]Processing dataset:  34%|███▍      | 344/1000 [10:17:33<38:28:48, 211.17s/sample]Processing dataset:  34%|███▍      | 345/1000 [10:19:53<34:30:26, 189.66s/sample]Processing dataset:  35%|███▍      | 346/1000 [10:22:22<32:14:06, 177.44s/sample]Processing dataset:  35%|███▍      | 347/1000 [10:27:24<38:59:22, 214.95s/sample]Processing dataset:  35%|███▍      | 348/1000 [10:30:02<35:48:49, 197.74s/sample]Processing dataset:  35%|███▍      | 349/1000 [10:35:22<42:22:28, 234.33s/sample]Processing dataset:  35%|███▌      | 350/1000 [10:38:04<38:24:04, 212.68s/sample]Processing dataset:  35%|███▌      | 351/1000 [10:40:44<35:29:51, 196.91s/sample]Processing dataset:  35%|███▌      | 352/1000 [10:45:38<40:42:56, 226.20s/sample]Processing dataset:  35%|███▌      | 353/1000 [10:48:10<36:38:49, 203.91s/sample]Processing dataset:  35%|███▌      | 354/1000 [10:52:00<37:59:21, 211.71s/sample]Processing dataset:  36%|███▌      | 355/1000 [10:55:28<37:42:03, 210.42s/sample]Processing dataset:  36%|███▌      | 356/1000 [11:00:10<41:31:25, 232.12s/sample]Processing dataset:  36%|███▌      | 357/1000 [11:03:50<40:47:34, 228.39s/sample]Processing dataset:  36%|███▌      | 358/1000 [11:09:01<45:08:24, 253.12s/sample]Processing dataset:  36%|███▌      | 359/1000 [11:14:05<47:46:48, 268.34s/sample]Processing dataset:  36%|███▌      | 360/1000 [11:19:28<50:37:01, 284.72s/sample]Processing dataset:  36%|███▌      | 361/1000 [11:23:17<47:36:50, 268.25s/sample]Processing dataset:  36%|███▌      | 362/1000 [11:26:07<42:18:12, 238.70s/sample]Processed 243/1000 - QID: 2oNbYWfxkwwH2xMomihL6d, Correct: farmer's market
+Processed 244/1000 - QID: 2oWf9FxcRonMKfY6bcHw8B, Correct: garbage can
+Processed 245/1000 - QID: 2ogZpBiHFQD4Bdv2KcPp6x, Correct: mud
+Processed 246/1000 - QID: 2p4WjSaLzfpqtNkf4SSgbJ, Correct: spring
+Processed 247/1000 - QID: 2p5yyyu4QUyMfBhwNtMGWN, Correct: arguing
+Processed 248/1000 - QID: 2pCZGCKf2bcqatCUJ4mXgK, Correct: pepsi
+Processed 249/1000 - QID: 2pMWV5w7dWAShEW2ZGRh2f, Correct: uphill
+Processed 250/1000 - QID: 2pMqUz97nCZNNHfyLLm8CA, Correct: groceries food
+Processed 251/1000 - QID: 2pQgwofg9Pj8S4AAKPfLCo, Correct: lions
+Processed 252/1000 - QID: 2pbBe9M67smArNNMW2fWeP, Correct: parasols
+Processed 253/1000 - QID: 2pmQHTP9usUi9j6izsRGqj, Correct: rocking
+Processed 254/1000 - QID: 2q2iRewZiKvao7vqL8WqH3, Correct: peppers
+Processed 255/1000 - QID: 2q6YSHE97ZoNayC9armhFZ, Correct: baby
+Processed 256/1000 - QID: 2qFBsdJzskopcje4kMhKvt, Correct: sauce
+Processed 257/1000 - QID: 2qJFQrZkz6drJhQhunsG6S, Correct: chocolate
+Processed 258/1000 - QID: 2qfDjbRQKMGRm8u3GMfULf, Correct: sound
+Processed 259/1000 - QID: 2r8SWUogFQSTaCTSjcMPQL, Correct: reach
+Processed 260/1000 - QID: 2r8bdfHsstEya2aEPzGb4g, Correct: eating
+Processed 261/1000 - QID: 2rGGBBZMGi9PRcYZpYhZtQ, Correct: tell time
+Processed 262/1000 - QID: 2rJaxPnac7DkSdJxFXbYZX, Correct: breakfast
+Processed 263/1000 - QID: 2rKpTCw9vxsMje7jBHTCUw, Correct: cross water
+Processed 264/1000 - QID: 2rMhLFFFqxFpXNAr5mnMfe, Correct: gooey cake
+Processed 265/1000 - QID: 2reFmN4HbDRdHVwVdstsYG, Correct: to eat
+Processed 266/1000 - QID: 2rtUztjWdJVzKLv9uZxM2A, Correct: hanging light
+Processed 267/1000 - QID: 2s77G67Z5HtiK6jLaLXeNR, Correct: garden
+Processed 268/1000 - QID: 2siybFe8K22eBFQEXYAEZR, Correct: bicycles
+Processed 269/1000 - QID: 2st5q86oarN2Tm7Lm7KjJZ, Correct: fisherman
+Processed 270/1000 - QID: 2tMdYfr2pzaftvy3kjBvRf, Correct: marina
+Processed 271/1000 - QID: 2tXyR9M3cjTKGUrhaftPWk, Correct: sunset
+Processed 272/1000 - QID: 2tZLRVygQcYpearj4oR38a, Correct: for guidance
+Processed 273/1000 - QID: 2tbSsLPG5kmdhnxpFZZWZN, Correct: crunchy
+Processed 274/1000 - QID: 2tnrsfgVw8uvKtsUuZ7tKK, Correct: chinese
+Processed 275/1000 - QID: 2tsqTAUtrDxKjrijpnbM9Q, Correct: left
+Processed 276/1000 - QID: 2txsTcKVQndwtnZzzhjwrD, Correct: person talking
+Processed 277/1000 - QID: 2uiKkiEA2VMZLe2tH6D5Z5, Correct: selling them
+Processed 278/1000 - QID: 2ukBACGpXbaGpNTJ2S4DxN, Correct: right
+Processed 279/1000 - QID: 2upTqZVzWL6azGoLBmLbuD, Correct: sweden
+Processed 280/1000 - QID: 2utpuoa4LAJsUxjewhYmVZ, Correct: rocking
+Processed 281/1000 - QID: 2vJ3vwxi8MMAZF3AQgcd8N, Correct: flowers
+Processed 282/1000 - QID: 2w4WzkMbdqJF73FTwqW9LS, Correct: time lapse
+Processed 283/1000 - QID: 2wEhAisp84z629c35FX4iH, Correct: christmas
+Processed 284/1000 - QID: 2wZJ4LaB6hNPfBabBGfnms, Correct: chain
+Processed 285/1000 - QID: 2wjx6PRh6T6YvJq7axTsVK, Correct: child's parent
+Processed 286/1000 - QID: 2wphWPKwLVymhu5ERpDHvC, Correct: three
+Processed 287/1000 - QID: 2wqfH2u2rS9cvJcsskf9Z7, Correct: jet fuel
+Processed 288/1000 - QID: 2wtQbTM3U9hE5J7H9Uh3Lg, Correct: tropical
+Processed 289/1000 - QID: 2wye5cqwjufVhoTxionwuA, Correct: tourists
+Processed 290/1000 - QID: 2x27xTjotd4HCZabf24qnF, Correct: necktie
+Processed 291/1000 - QID: 2xKp9fyKAAKp3rvFjdC6uW, Correct: to balance
+Processed 292/1000 - QID: 2xqH68d6RceuVDRAsgUSYk, Correct: speed up
+Processed 293/1000 - QID: 2xyjr4Cteb43SRUv4wgByA, Correct: cream cheese
+Processed 294/1000 - QID: 2xykkBDGfgFF6btWmW5LiE, Correct: bread
+Processed 295/1000 - QID: 2y3zK8shUWAHMTVg2GP9fW, Correct: their luggage
+Processed 296/1000 - QID: 2y5FeAprVJNWRBaUzGQrZe, Correct: airport
+Processed 297/1000 - QID: 2y6zpCz73AgHD8GUR33CZB, Correct: thailand
+Processed 298/1000 - QID: 2yL2F7Ybq2PBPHxLUdL5qE, Correct: mercedes
+Processed 299/1000 - QID: 2yT7o7NqUySs4ohAuPHwFr, Correct: video game
+Processed 300/1000 - QID: 2yYfBFduFsU7yhh66ayxLm, Correct: jaywalking
+Processed 301/1000 - QID: 2zdHTSzNfn2p8KFWTXWTz7, Correct: whipped cream
+Processed 302/1000 - QID: 2zoCgwo5yY8wb7pFD7qsVc, Correct: vegan
+Processed 303/1000 - QID: 328vSVNCTKtBmM92DkuSfg, Correct: greengrocer
+Processed 304/1000 - QID: 32ej4uhg8gmnWWPB7xBBxn, Correct: no parking
+Processed 305/1000 - QID: 32i474zFFB2UfdSbttdzQU, Correct: painting
+Processed 306/1000 - QID: 32jjS6cJqmK2eGwfMiRXVH, Correct: swung bat
+Processed 307/1000 - QID: 32jufRUa6GAAujNLw6QLqx, Correct: underwear
+Processed 308/1000 - QID: 32vRajjARssLMrXbUQb5fy, Correct: none
+Processed 309/1000 - QID: 32wUNU23sZjaZD8up9BVU9, Correct: station
+Processed 310/1000 - QID: 332stYnsCpZaWqGXwAg5qb, Correct: floaty
+Processed 311/1000 - QID: 33DPuC3HsYxY85pCTfcoxv, Correct: germany
+Processed 312/1000 - QID: 33GnTLGZ37e3ET4XiWjjpX, Correct: zombie
+Processed 313/1000 - QID: 33KfQ6bntCsKAQ2dMSqLjV, Correct: camera holder
+Processed 314/1000 - QID: 33Pnsx5T4H7ss6hzU4r687, Correct: perfect angle
+Processed 315/1000 - QID: 33RAXSXtDTXUBxzgkftfiR, Correct: turkey
+Processed 316/1000 - QID: 33iTjiCzhsAsjQtkcDRjjc, Correct: catch food
+Processed 317/1000 - QID: 33v64Y8hC69xvrwwLMNeXg, Correct: hyundai verna
+Processed 318/1000 - QID: 33vb4bXSp6it6BVqY9APAw, Correct: glide
+Processed 319/1000 - QID: 33whF8sbHyBnXx2Qxfamxy, Correct: residential
+Processed 320/1000 - QID: 344TWsCnZdHWSH2a5ub3T7, Correct: flu
+Processed 321/1000 - QID: 34AniAfmwoyzVqSbNLWbTS, Correct: flour
+Processed 322/1000 - QID: 34DnLbMHB2m8g8xX5cfAzk, Correct: dog
+Processed 323/1000 - QID: 34H9tPJUEEvkiHxjW3vPCU, Correct: united states
+Processed 324/1000 - QID: 34Nb98xWQ4Wftkr7Hyvh76, Correct: buffalo
+Processed 325/1000 - QID: 34NsUPxzwYRSDStTvnN52G, Correct: coffee break
+Processed 326/1000 - QID: 34cfJ3axX2cwzCE8cZgdcd, Correct: spanish
+Processed 327/1000 - QID: 34cuS7Sv6N5k8U6WGbUc9n, Correct: foals
+Processed 328/1000 - QID: 34pFTyFGFhT9yJFB5VxfeF, Correct: motel
+Processed 329/1000 - QID: 34pmv3z8Yj7dvmPC7prWJ8, Correct: surf leash
+Processed 330/1000 - QID: 34tZVWivakJZjrXEJSqBr7, Correct: plastic
+Processed 331/1000 - QID: 34wn2zunbWsvsrFvQSTUBM, Correct: stinger
+Processed 332/1000 - QID: 35RzYSEbSVgNqQGQGaFsbG, Correct: fighting
+Processed 333/1000 - QID: 35SWU5gThVQDSAJN4W4WPH, Correct: skateboard
+Processed 334/1000 - QID: 35iMYuKQy4DXymamhbGyps, Correct: china town
+Processed 335/1000 - QID: 3683ebKSm8f6cjxyBVAMRN, Correct: power source
+Processed 336/1000 - QID: 36GTiLVAb58jmrfUh8N74M, Correct: red
+Processed 337/1000 - QID: 36KgoVo7KcEFHiW8gnKGDR, Correct: new york
+Processed 338/1000 - QID: 36W5y3H7ksVib2sh2ij2HW, Correct: policeman
+Processed 339/1000 - QID: 36XKFSRexU37GWH5qVpCmn, Correct: evergreen
+Processed 340/1000 - QID: 36pkpkmU7DrybBFpqMVdCD, Correct: cell phones
+Processed 341/1000 - QID: 36zFAXHnDCERMr2MHkeC9M, Correct: newspapers
+Processed 342/1000 - QID: 37iYoCuHJeJsVNpsAxKEod, Correct: asembling toys
+Processed 343/1000 - QID: 37pgyrRm3x8H9dfk9K6mYL, Correct: to drink
+Processed 344/1000 - QID: 37yEgPWZu6DFxq9rHMBStL, Correct: surf
+Processed 345/1000 - QID: 385qrdi4qQNLyMbkSZ7UaX, Correct: blow candle
+Processed 346/1000 - QID: 386eHGf5XcCQUf49uPqWfd, Correct: surf boards
+Processed 347/1000 - QID: 388HEnTRUYXpKYiDT6KQub, Correct: being bathed
+Processed 348/1000 - QID: 38VofNSbjvwiaTRN6sxZ4X, Correct: mirror
+Processed 349/1000 - QID: 38Yce7KdAq9eLRwFivC6Ha, Correct: cook
+Processed 350/1000 - QID: 38gZxsZeMJNFRRj9MAvTHL, Correct: throw it
+Processed 351/1000 - QID: 39GH5AU7AiVwJY4v3evXAH, Correct: bathrooms
+Processed 352/1000 - QID: 39Q5fstEkFrtSmPkhjkDHx, Correct: two
+Processed 353/1000 - QID: 39XdnBGQvRvStbRSokCyP3, Correct: straw
+Processed 354/1000 - QID: 39eDV8op57ocaB7u39jVSJ, Correct: canoeing
+Processed 355/1000 - QID: 39hgYLcgdLvGBopydhMACo, Correct: hat
+Processed 356/1000 - QID: 39viJBNH5xm4h4nbde4h7x, Correct: amusement park
+Processed 357/1000 - QID: 3A8PDnPFebQd9udNjx6w3i, Correct: behind it
+Processed 358/1000 - QID: 3AESHmHLNf2dMZ3UEnNfob, Correct: family
+Processed 359/1000 - QID: 3AMfFhyBnvbrjfBHuXd9hV, Correct: crib
+Processed 360/1000 - QID: 3ATHf8RpHAqJM2a7QmLost, Correct: thunderstorms
+Processed 361/1000 - QID: 3ATpEWtb2zzYowgZqT5hAQ, Correct: red car
+Processed 362/1000 - QID: 3B572r8XjMWuAMafuET6WQ, Correct: surfing
+Processing dataset:  36%|███▋      | 363/1000 [11:28:42<37:46:35, 213.49s/sample]Processing dataset:  36%|███▋      | 364/1000 [11:31:31<35:22:53, 200.27s/sample]Processing dataset:  36%|███▋      | 365/1000 [11:34:29<34:06:11, 193.34s/sample]Processing dataset:  37%|███▋      | 366/1000 [11:37:47<34:20:13, 194.97s/sample]Processing dataset:  37%|███▋      | 367/1000 [11:43:26<41:52:56, 238.19s/sample]Processing dataset:  37%|███▋      | 368/1000 [11:48:12<44:18:42, 252.41s/sample]Processing dataset:  37%|███▋      | 369/1000 [11:50:56<39:36:51, 226.01s/sample]Processing dataset:  37%|███▋      | 370/1000 [11:53:28<35:39:08, 203.73s/sample]Processing dataset:  37%|███▋      | 371/1000 [11:58:24<40:26:27, 231.46s/sample]Processing dataset:  37%|███▋      | 372/1000 [12:02:44<41:50:04, 239.82s/sample]Processing dataset:  37%|███▋      | 373/1000 [12:05:49<38:55:02, 223.45s/sample]Processing dataset:  37%|███▋      | 374/1000 [12:08:39<36:04:29, 207.46s/sample]Processing dataset:  38%|███▊      | 375/1000 [12:13:20<39:50:11, 229.46s/sample]Processing dataset:  38%|███▊      | 376/1000 [12:17:40<41:21:35, 238.61s/sample]Processing dataset:  38%|███▊      | 377/1000 [12:21:54<42:07:29, 243.42s/sample]Processing dataset:  38%|███▊      | 378/1000 [12:24:34<37:44:07, 218.40s/sample]Processing dataset:  38%|███▊      | 379/1000 [12:29:14<40:49:28, 236.66s/sample]Processing dataset:  38%|███▊      | 380/1000 [12:32:10<37:38:52, 218.60s/sample]Processing dataset:  38%|███▊      | 381/1000 [12:34:53<34:41:54, 201.80s/sample]Processing dataset:  38%|███▊      | 382/1000 [12:37:50<33:23:22, 194.50s/sample]Processing dataset:  38%|███▊      | 383/1000 [12:40:54<32:45:58, 191.18s/sample]Processing dataset:  38%|███▊      | 384/1000 [12:43:58<32:20:47, 189.04s/sample]Processing dataset:  38%|███▊      | 385/1000 [12:47:34<33:42:18, 197.30s/sample]Processing dataset:  39%|███▊      | 386/1000 [12:50:24<32:14:11, 189.01s/sample]Processing dataset:  39%|███▊      | 387/1000 [12:56:03<39:52:27, 234.17s/sample]Processing dataset:  39%|███▉      | 388/1000 [12:58:45<36:05:52, 212.34s/sample]Processing dataset:  39%|███▉      | 389/1000 [13:01:52<34:44:11, 204.67s/sample]Processing dataset:  39%|███▉      | 390/1000 [13:07:38<41:52:57, 247.18s/sample]Processing dataset:  39%|███▉      | 391/1000 [13:13:02<45:42:19, 270.18s/sample]Processing dataset:  39%|███▉      | 392/1000 [13:20:52<55:45:20, 330.13s/sample]Processing dataset:  39%|███▉      | 393/1000 [13:23:54<48:10:22, 285.71s/sample]Processing dataset:  39%|███▉      | 394/1000 [13:30:52<54:46:43, 325.42s/sample]Processing dataset:  40%|███▉      | 395/1000 [13:38:37<61:43:36, 367.30s/sample]Processing dataset:  40%|███▉      | 396/1000 [13:45:36<64:14:21, 382.88s/sample]Processing dataset:  40%|███▉      | 397/1000 [13:48:59<55:05:09, 328.87s/sample]Processing dataset:  40%|███▉      | 398/1000 [13:51:54<47:15:21, 282.59s/sample]Processing dataset:  40%|███▉      | 399/1000 [14:01:46<62:41:05, 375.48s/sample]Processing dataset:  40%|████      | 400/1000 [14:07:58<62:24:26, 374.44s/sample]Processing dataset:  40%|████      | 401/1000 [14:10:49<52:08:58, 313.42s/sample]Processing dataset:  40%|████      | 402/1000 [14:13:29<44:25:45, 267.47s/sample]Processing dataset:  40%|████      | 403/1000 [14:18:51<47:03:55, 283.81s/sample]Processing dataset:  40%|████      | 404/1000 [14:21:41<41:19:00, 249.57s/sample]Processing dataset:  40%|████      | 405/1000 [14:24:29<37:11:59, 225.08s/sample]Processing dataset:  41%|████      | 406/1000 [14:27:02<33:34:40, 203.50s/sample]Processing dataset:  41%|████      | 407/1000 [14:31:48<37:37:01, 228.37s/sample]Processing dataset:  41%|████      | 408/1000 [14:34:52<35:21:39, 215.03s/sample]Processing dataset:  41%|████      | 409/1000 [14:38:14<34:37:59, 210.96s/sample]Processing dataset:  41%|████      | 410/1000 [14:43:30<39:43:52, 242.43s/sample]

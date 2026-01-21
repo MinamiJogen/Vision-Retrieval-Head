@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+한자어 수사는?
+<|im_end|>
+<|im_start|>assistant

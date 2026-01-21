@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "Tag und Nacht freihalten! SVB.",
+  "model_response": "Das Schild zeigt die Abkürzung \"TVB\" und das Wort \"freilat!\" auf. \"TVB\" steht für \"TVB-Tage Nacht Freiheit\", was wahrscheinlich einen speziellen Tag oder eine Veranstaltung bezieht, die den Freiheitsgefühl und die Begeisterung für das TVB-Programm oder -Landmark symbolisiert. \"Freilat!\" könnte eine Aufforderung oder eine Formulierung sein, die dazu beitragen soll, dass die Besucher sich begeistern und eine Freiheit genießen sollen, die durch die Veranstaltung oder das Programm verkündet wird.",
+  "score": 60.0,
+  "test_duration_seconds": 27.420234203338623,
+  "test_timestamp_utc": "2025-03-06 18:01:11+0000"
+}

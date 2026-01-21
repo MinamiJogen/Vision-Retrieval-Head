@@ -1,0 +1,1 @@
+{"features":[{"feature_idx":0,"name":"text","type":{"dtype":"string","_type":"Value"}},{"feature_idx":1A new report from the WMO shows that records were once again broken, and in some cases smashed, for greenhouse gas levels, surface temperatures, ocean heat and acidification.

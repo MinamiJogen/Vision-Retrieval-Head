@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "Có",
+  "model_response": "Dựa vào hình ảnh mà bạn cung cấp, tôi thấy có một biển báo với thông tin về giờ mở cửa trường và thời gian đóng cửa. Tuy nhiên, không thể xác định rõ ràng xem trường học này có cấm phụ huynh đỗ xe trong trường hay không chỉ dựa trên hình ảnh đó. Cần phải có thêm thông tin chi tiết hoặc biển báo khác để trả lời câu hỏi của bạn.",
+  "score": 100.0,
+  "test_duration_seconds": 17.199438095092773,
+  "test_timestamp_utc": "2025-03-06 18:34:02+0000"
+}

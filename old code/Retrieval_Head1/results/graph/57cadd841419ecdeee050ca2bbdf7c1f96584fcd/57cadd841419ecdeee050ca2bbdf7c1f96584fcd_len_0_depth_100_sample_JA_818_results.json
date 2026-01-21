@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "中原区木月3丁目39-3",
+  "model_response": "画像に写っている住所は、日本語で「3-38-38」です。この住所は、都道府県名や市区町村名などを含む具体的な住所を示すため、日本語の住所表記形式に従って読み取ることが適切です。",
+  "score": 33.33333333333333,
+  "test_duration_seconds": 12.973854541778564,
+  "test_timestamp_utc": "2025-03-06 17:53:54+0000"
+}

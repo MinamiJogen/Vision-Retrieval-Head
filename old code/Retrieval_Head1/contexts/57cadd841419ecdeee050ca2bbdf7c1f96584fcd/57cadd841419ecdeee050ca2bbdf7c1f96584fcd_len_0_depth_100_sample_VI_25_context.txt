@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+Nước khoáng thiên nhiên La Vie có hàm lượng khoáng chất nào?
+<|im_end|>
+<|im_start|>assistant

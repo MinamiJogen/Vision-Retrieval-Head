@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+계수가 소수이면 10의 거듭제곱을 곱한다.
+<|im_end|>
+<|im_start|>assistant

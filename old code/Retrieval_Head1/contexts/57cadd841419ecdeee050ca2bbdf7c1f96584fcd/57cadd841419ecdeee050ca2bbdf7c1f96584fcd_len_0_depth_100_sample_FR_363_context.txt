@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+Quel est le nom de l'organisme qui a approuvé le sous-comité ?
+<|im_end|>
+<|im_start|>assistant

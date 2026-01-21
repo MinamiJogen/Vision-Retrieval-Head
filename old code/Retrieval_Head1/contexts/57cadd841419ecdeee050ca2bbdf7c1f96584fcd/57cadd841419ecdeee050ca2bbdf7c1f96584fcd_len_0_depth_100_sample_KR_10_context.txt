@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+이미지의 텍스트는 무슨 뜻인가요?
+<|im_end|>
+<|im_start|>assistant

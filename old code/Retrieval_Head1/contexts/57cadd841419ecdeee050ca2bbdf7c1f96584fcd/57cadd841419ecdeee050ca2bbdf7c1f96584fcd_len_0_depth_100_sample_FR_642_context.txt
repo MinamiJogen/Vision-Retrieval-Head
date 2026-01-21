@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+Quelle est la date de sortie de la PlayStation Vita ?
+<|im_end|>
+<|im_start|>assistant

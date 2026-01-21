@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+프로그램을 들으며 가장 좋았던 점은?
+<|im_end|>
+<|im_start|>assistant

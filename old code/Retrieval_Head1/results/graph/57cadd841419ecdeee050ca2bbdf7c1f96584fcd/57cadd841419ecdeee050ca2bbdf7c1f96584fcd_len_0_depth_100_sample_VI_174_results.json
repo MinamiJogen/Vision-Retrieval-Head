@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "200 gam",
+  "model_response": "Gói gia vị A-One trong hình bên phải có khối lượng tịnh là 705 oz.",
+  "score": 0.0,
+  "test_duration_seconds": 13.558175325393677,
+  "test_timestamp_utc": "2025-03-06 18:12:42+0000"
+}

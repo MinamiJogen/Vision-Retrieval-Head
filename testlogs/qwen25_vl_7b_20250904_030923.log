@@ -1,0 +1,56 @@
+=========================================
+开始测试 Qwen2.5-VL-7B-Instruct - Thu 04 Sep 2025 03:09:23 AM +08
+完整日志将保存到: ./testlogs/qwen25_vl_7b_20250904_030923.log
+=========================================
+
+>>> 模型路径: Qwen/Qwen2.5-VL-7B-Instruct
+>>> 开始评测 VideoMME...
+>>> 开始时间: Thu 04 Sep 2025 03:09:23 AM +08
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+[2025-09-04 03:09:30,999] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py:49: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, weight, bias=None):
+/home/minami/miniconda/envs/longva/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py:67: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.5
+[93m [WARNING] [0m using untested triton version (3.1.0), only 1.0.0 is known to be compatible
+[32m2025-09-04 03:09:32.548[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m295[0m - [1mVerbosity set to INFO[0m
+[32m2025-09-04 03:09:34.226[0m | [33m[1mWARNING [0m | [36mlmms_eval.tasks[0m:[36m_get_task_and_group[0m:[36m473[0m - [33m[1mThe tag coco_karpathy is already registered as a group, this tag will not be registered. This may affect tasks you want to call.[0m
+[32m2025-09-04 03:09:34.789[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m378[0m - [1mEvaluation tracker args: {'output_path': './testlogs/qwen25_vl_7b_videomme.json'}[0m
+[32m2025-09-04 03:09:34.790[0m | [1mINFO    [0m | [36m__main__[0m:[36mcli_evaluate_single[0m:[36m467[0m - [1mSelected Tasks: ['videomme'][0m
+[32m2025-09-04 03:09:34.791[0m | [1mINFO    [0m | [36mlmms_eval.evaluator[0m:[36msimple_evaluate[0m:[36m155[0m - [1mSetting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234[0m
+Fetching 24 files:   0%|          | 0/24 [00:00<?, ?it/s]Fetching 24 files: 100%|██████████| 24/24 [00:00<00:00, 17713.06it/s]
+[32m2025-09-04 03:09:38.866[0m | [33m[1mWARNING [0m | [36mlmms_eval.models.qwen2_5_vl[0m:[36m<module>[0m:[36m28[0m - [33m[1mFailed to import qwen_vl_utils; Please install it via `pip install qwen-vl-utils`[0m
+Traceback (most recent call last):
+  File "/disk3/minami/Vision-Retrieval-Head/lmms-eval/lmms_eval/__main__.py", line 330, in cli_evaluate
+    results, samples = cli_evaluate_single(args)
+  File "/disk3/minami/Vision-Retrieval-Head/lmms-eval/lmms_eval/__main__.py", line 471, in cli_evaluate_single
+    results = evaluator.simple_evaluate(
+  File "/disk3/minami/Vision-Retrieval-Head/lmms-eval/lmms_eval/utils.py", line 533, in _wrapper
+    return fn(*args, **kwargs)
+  File "/disk3/minami/Vision-Retrieval-Head/lmms-eval/lmms_eval/evaluator.py", line 176, in simple_evaluate
+    lm = lmms_eval.models.get_model(model).create_from_arg_string(
+  File "/disk3/minami/Vision-Retrieval-Head/lmms-eval/lmms_eval/api/model.py", line 110, in create_from_arg_string
+    return cls(**args, **args2)
+  File "/disk3/minami/Vision-Retrieval-Head/lmms-eval/lmms_eval/models/qwen2_5_vl.py", line 59, in __init__
+    assert kwargs == {}, f"Unexpected kwargs: {kwargs}"
+AssertionError: Unexpected kwargs: {'trust_remote_code': True}
+[32m2025-09-04 03:09:38.867[0m | [31m[1mERROR   [0m | [36m__main__[0m:[36mcli_evaluate[0m:[36m349[0m - [31m[1mError during evaluation: Unexpected kwargs: {'trust_remote_code': True}. Please set `--verbosity=DEBUG` to get more information.[0m
+>>> 评测成功
+>>> 结果保存到: ./testlogs/qwen25_vl_7b_videomme.json
+
+=========================================
+评测完成 - Thu 04 Sep 2025 03:09:40 AM +08
+结果文件: ./testlogs/qwen25_vl_7b_videomme.json
+完整日志: ./testlogs/qwen25_vl_7b_20250904_030923.log
+=========================================
+
+日志文件信息：
+-rw-rw-r-- 1 minami minami  14K Sep  4 03:03 ./testlogs/qwen25_vl_7b_20250904_030349.log
+-rw-rw-r-- 1 minami minami 8.0K Sep  4 03:07 ./testlogs/qwen25_vl_7b_20250904_030423.log
+-rw-rw-r-- 1 minami minami 4.6K Sep  4 03:09 ./testlogs/qwen25_vl_7b_20250904_030923.log

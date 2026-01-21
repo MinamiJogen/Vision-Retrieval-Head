@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+Wer spricht in Lektion 1 über seine Freunde?
+<|im_end|>
+<|im_start|>assistant

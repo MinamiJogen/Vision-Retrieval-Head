@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "Có, 1 năm",
+  "model_response": "Để trả lời câu hỏi này, tôi cần biết thêm thông tin chi tiết về thẻ liệu trình mà bạn đang hỏi. Tùy thuộc vào các điều khoản và điều kiện của mỗi chương trình, thẻ liệu trình có thể hoặc không có thời hạn sử dụng. Nếu bạn cung cấp thêm thông tin về thẻ liệu trình cụ thể, tôi sẽ có thể trả lời câu hỏi của bạn một cách chính xác hơn.",
+  "score": 75.0,
+  "test_duration_seconds": 9.844984292984009,
+  "test_timestamp_utc": "2025-03-06 17:49:30+0000"
+}

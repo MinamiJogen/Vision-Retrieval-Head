@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "Un soleil jaune dans un carré bleu",
+  "model_response": "Le logo de l'organisation semble être une représentation stylisée de la Terre avec des couleurs qui pourraient symboliser les continents ou les régions. Il y a également une forme ovale jaune qui pourrait représenter un soleil ou une région lumineuse, et une forme noire qui pourrait représenter une nuée ou une zone nuageuse. Enfin, il y a un texte en bas du logo qui semble indiquer le nom de l'organisation, mais je ne peux pas fournir d'informations sur l'organisation elle-même car je ne suis pas autorisé à discuter de marques commerciales ou de logos de sociétés spécifiques.",
+  "score": 57.14285714285714,
+  "test_duration_seconds": 17.833995819091797,
+  "test_timestamp_utc": "2025-03-06 18:43:15+0000"
+}

@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+서비스 산업은 기술 집약적이다. 왜 그럴까요?
+<|im_end|>
+<|im_start|>assistant

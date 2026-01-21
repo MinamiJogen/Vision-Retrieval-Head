@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+Quali sono i contenuti e le metodologie di intervento nella terza fase?
+<|im_end|>
+<|im_start|>assistant

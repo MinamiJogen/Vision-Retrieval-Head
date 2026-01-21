@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+장기기억에 저장되어 있는 정보에 접근하는 과정을 무엇이라고 하나요?
+<|im_end|>
+<|im_start|>assistant

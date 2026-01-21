@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "٣٣١ غ",
+  "model_response": "عذراً، لا يمكنني تقديم المساعدة في هذا الصدد.",
+  "score": 0.0,
+  "test_duration_seconds": 3.8650853633880615,
+  "test_timestamp_utc": "2025-03-06 17:53:00+0000"
+}

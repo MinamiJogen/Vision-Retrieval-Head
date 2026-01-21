@@ -1,0 +1,17 @@
+[2025-12-11 14:47:57] ==========================================
+[2025-12-11 14:47:57] Starting test evaluation with config file
+[2025-12-11 14:47:57] ==========================================
+python: can't open file '/disk3/minami/Vision-Retrieval-Head/run.py': [Errno 2] No such file or directory
+[2025-12-11 14:47:57] ==========================================
+[2025-12-11 14:47:57] Test Evaluation Summary
+[2025-12-11 14:47:57] ==========================================
+[2025-12-11 14:47:57] End Time: Thu 11 Dec 2025 02:47:57 PM +08
+[2025-12-11 14:47:57] 
+[2025-12-11 14:47:57] ❌ Test evaluation failed with exit code: 2
+[2025-12-11 14:47:57] 
+[2025-12-11 14:47:57] Results location: ./results/longva_video_results/test_20251211_144757
+[2025-12-11 14:47:57] Log file: ./logs/test_video_20251211_144757.log
+[2025-12-11 14:47:57] ==========================================
+[2025-12-11 14:47:57] 
+[2025-12-11 14:47:57] Checking results...
+[2025-12-11 14:47:57] ⚠️  No results directory found

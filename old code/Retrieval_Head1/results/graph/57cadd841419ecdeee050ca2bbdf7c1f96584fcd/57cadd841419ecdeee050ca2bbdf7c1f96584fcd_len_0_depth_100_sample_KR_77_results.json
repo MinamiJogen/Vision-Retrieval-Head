@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "누구나 쉽게 체험하고 만들 수 있음",
+  "model_response": "해당 문장은 한국어로 전문가만이 제작한다는 의미입니다.",
+  "score": 0.0,
+  "test_duration_seconds": 7.923307657241821,
+  "test_timestamp_utc": "2025-03-06 18:42:37+0000"
+}

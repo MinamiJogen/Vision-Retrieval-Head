@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+사례분석 프레임워크의 종류는?
+<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "„Einge Politiker wollen einen Jugendarrest für Schwänzer. Grewe fordert dagegen präventive Maßnahmen.“",
+  "model_response": "In diesem Satz bedeutet \"dagegen\" eine negativen Antwort oder eine Ablehnung einer Idee, einer Aktion oder eines Entscheids.",
+  "score": 6.25,
+  "test_duration_seconds": 12.866150617599487,
+  "test_timestamp_utc": "2025-03-06 18:09:30+0000"
+}

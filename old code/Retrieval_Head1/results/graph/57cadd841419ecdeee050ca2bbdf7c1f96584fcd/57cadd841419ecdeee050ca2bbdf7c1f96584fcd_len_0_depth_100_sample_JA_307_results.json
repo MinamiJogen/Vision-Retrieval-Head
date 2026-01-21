@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "２輪車ETC取扱店",
+  "model_response": "画像には「201」が含まれています。これは通常、数字として読み取ることができます。ただし、この画像は日本語表記の看板や指示板に似ており、上部には「201」以外にも意味があることが考えられます。具体的な意味は画像から直接的に推測することはできませんが、一般的には「201」という番号や順序番号などが考えられます。",
+  "score": 0.0,
+  "test_duration_seconds": 12.254961490631104,
+  "test_timestamp_utc": "2025-03-06 17:53:24+0000"
+}

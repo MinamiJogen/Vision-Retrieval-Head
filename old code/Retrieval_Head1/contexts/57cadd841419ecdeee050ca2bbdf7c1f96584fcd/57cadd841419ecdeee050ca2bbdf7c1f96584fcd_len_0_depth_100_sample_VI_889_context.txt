@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+Xe xuất phát từ đâu?
+<|im_end|>
+<|im_start|>assistant

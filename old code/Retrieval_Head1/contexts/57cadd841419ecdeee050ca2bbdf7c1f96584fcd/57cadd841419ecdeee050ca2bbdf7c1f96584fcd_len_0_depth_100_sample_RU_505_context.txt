@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+Как вы думаете, почему именно эти слова стали заглавием главы?
+<|im_end|>
+<|im_start|>assistant

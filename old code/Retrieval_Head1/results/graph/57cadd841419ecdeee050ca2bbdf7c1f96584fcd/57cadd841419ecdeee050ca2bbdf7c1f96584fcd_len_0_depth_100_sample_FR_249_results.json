@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "France",
+  "model_response": "La variété de pommes représentée dans l'image est probablement une pomme de terre, qui est une variété de pomme de terre (où le mot \"pomme\" est souvent utilisé pour désigner la pomme de terre) et non une variété de pommes comestibles. Toutefois, en tant que modèle basé sur des images, je ne peux pas identifier avec certitude la variété spécifique de pomme de terre présente dans l'image. Si vous cherchez une information sur les variétés de pommes comestibles, veuillez préciser ou fournir plus de détails pour que je puisse vous aider davantage.",
+  "score": 0.0,
+  "test_duration_seconds": 18.98210382461548,
+  "test_timestamp_utc": "2025-03-06 17:55:17+0000"
+}

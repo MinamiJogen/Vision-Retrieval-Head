@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+画像に書かれている言葉は何ですか？
+<|im_end|>
+<|im_start|>assistant

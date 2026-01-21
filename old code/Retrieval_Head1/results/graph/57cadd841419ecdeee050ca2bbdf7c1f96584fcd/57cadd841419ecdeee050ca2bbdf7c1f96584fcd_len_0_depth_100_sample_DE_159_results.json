@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "Michael",
+  "model_response": "In Lektion 1 spricht Personen Nr. 1, Niklas, über seine Freunde.",
+  "score": 0.0,
+  "test_duration_seconds": 9.096340894699097,
+  "test_timestamp_utc": "2025-03-06 18:41:39+0000"
+}

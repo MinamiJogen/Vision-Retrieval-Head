@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+Welche Farbe hat die Umrandung des Schildes?
+<|im_end|>
+<|im_start|>assistant

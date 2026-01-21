@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "Il est en train de pousser une brouette.",
+  "model_response": "Le personnage dans l'image semble être en mouvement, peut-être en courant ou en se déplaçant rapidement. Il est dessiné avec des traits dynamiques qui ajoutent à l'impression d'un mouvement rapide ou d'un moment captivant de l'animation ou du dessin.",
+  "score": 50.0,
+  "test_duration_seconds": 13.369781017303467,
+  "test_timestamp_utc": "2025-03-06 18:40:48+0000"
+}

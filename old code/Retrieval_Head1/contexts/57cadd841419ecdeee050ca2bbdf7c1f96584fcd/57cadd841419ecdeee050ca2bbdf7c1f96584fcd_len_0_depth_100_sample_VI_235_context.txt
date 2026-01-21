@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+Dựa vào biểu đồ hãy cho biết mật độ dân số của các tỉnh thành phố thuộc đồng bằng sông Hồng năm 2010?
+<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,11 @@
+{
+  "model": "/disk3/minami/huggingface/hub/models--lmms-lab--LongVA-7B-DPO/snapshots/57cadd841419ecdeee050ca2bbdf7c1f96584fcd",
+  "context_length": 0,
+  "depth_percent": 100,
+  "version": 1,
+  "needle": "Reifen Technik",
+  "model_response": "Das untere Schild besagt \"Reifen Technik\".",
+  "score": 100.0,
+  "test_duration_seconds": 9.124699354171753,
+  "test_timestamp_utc": "2025-03-06 18:04:35+0000"
+}

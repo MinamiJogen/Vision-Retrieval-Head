@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+この標識は何を意味していますか？
+<|im_end|>
+<|im_start|>assistant

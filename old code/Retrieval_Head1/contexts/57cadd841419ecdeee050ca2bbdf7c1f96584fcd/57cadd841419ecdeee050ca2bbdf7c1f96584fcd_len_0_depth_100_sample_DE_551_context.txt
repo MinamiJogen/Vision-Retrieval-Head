@@ -1,0 +1,7 @@
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<image>
+Was meint ihr, gibt es Leute, die sich nie verspäten? Kreuzt an und ergänzt: Ja/Nein,...
+<|im_end|>
+<|im_start|>assistant

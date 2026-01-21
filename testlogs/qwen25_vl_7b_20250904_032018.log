@@ -1,0 +1,24 @@
+=========================================
+开始测试 Qwen2.5-VL-7B-Instruct - Thu 04 Sep 2025 03:20:18 AM +08
+完整日志将保存到: ./testlogs/qwen25_vl_7b_20250904_032018.log
+=========================================
+
+>>> 模型路径: Qwen/Qwen2.5-VL-7B-Instruct
+>>> 开始评测 VideoMME...
+>>> 开始时间: Thu 04 Sep 2025 03:20:18 AM +08
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+/home/minami/miniconda/envs/qwen/bin/python3.10: No module named lmms_eval
+Traceback (most recent call last):
+  File "/home/minami/miniconda/envs/qwen/bin/accelerate", line 7, in <module>
+    sys.exit(main())
+  File "/home/minami/miniconda/envs/qwen/lib/python3.10/site-packages/accelerate/commands/accelerate_cli.py", line 50, in main
+    args.func(args)
+  File "/home/minami/miniconda/envs/qwen/lib/python3.10/site-packages/accelerate/commands/launch.py", line 1235, in launch_command
+    simple_launcher(args)
+  File "/home/minami/miniconda/envs/qwen/lib/python3.10/site-packages/accelerate/commands/launch.py", line 823, in simple_launcher
+    raise subprocess.CalledProcessError(returncode=process.returncode, cmd=cmd)
+subprocess.CalledProcessError: Command '['/home/minami/miniconda/envs/qwen/bin/python3.10', '-m', 'lmms_eval', '--model', 'qwen2_vl', '--model_args', 'pretrained=Qwen/Qwen2.5-VL-7B-Instruct,device_map=auto', '--tasks', 'videomme', '--batch_size', '1', '--log_samples', '--log_samples_suffix', 'videomme_qwen25_vl_7b', '--output_path', './testlogs/qwen25_vl_7b_videomme.json']' returned non-zero exit status 1.

@@ -1,0 +1,238 @@
+================================================================================
+              最终评测指南 - 所有脚本都需要 qwen3 环境
+================================================================================
+
+⚠️  重要更新: InternVL 和 Qwen3 都需要在 qwen3 环境中运行
+
+✅ 三个独立脚本，9个稳定的 Benchmarks
+
+================================================================================
+📦 评测脚本
+================================================================================
+
+脚本1: eval_longva_models.sh
+   模型: LongVA-Temporal-v1, LongVA-Temporal-v2, LongVA-7B
+   环境: 默认环境即可（longva环境）
+
+脚本2: eval_internvl_models.sh
+   模型: InternVL3_5-8B
+   环境: ⚠️  必须在 qwen3 环境中
+   检查: ✓ 自动检查环境
+
+脚本3: eval_qwen3_models.sh
+   模型: Qwen3-VL-8B-Instruct
+   环境: ⚠️  必须在 qwen3 环境中
+   检查: ✓ 自动检查环境
+
+================================================================================
+🚀 运行命令
+================================================================================
+
+--- LongVA (默认环境) ---
+
+   cd VLMEvalKit
+   bash ../eval_longva_models.sh
+
+--- InternVL (需要 qwen3 环境) ---
+
+   conda activate qwen3
+   cd VLMEvalKit
+   bash ../eval_internvl_models.sh
+
+--- Qwen3 (需要 qwen3 环境) ---
+
+   conda activate qwen3
+   cd VLMEvalKit
+   bash ../eval_qwen3_models.sh
+
+================================================================================
+✅ 环境检查
+================================================================================
+
+InternVL 和 Qwen3 脚本都会自动检查环境：
+
+正确示例:
+   Checking conda environment...
+   Current conda environment: qwen3
+   ✓ Conda environment check passed: qwen3
+
+错误示例:
+   ❌ ERROR: Wrong conda environment!
+
+   Current environment: longva
+   Required environment: qwen3
+
+   Please switch to the correct environment:
+     conda activate qwen3
+
+脚本会自动停止并提示切换环境。
+
+================================================================================
+🔄 并行评测（使用3个GPU）
+================================================================================
+
+终端1 - LongVA (默认环境，GPU 0):
+   cd VLMEvalKit
+   CUDA_VISIBLE_DEVICES=0 bash ../eval_longva_models.sh
+
+终端2 - InternVL (qwen3环境，GPU 1):
+   conda activate qwen3
+   cd VLMEvalKit
+   CUDA_VISIBLE_DEVICES=1 bash ../eval_internvl_models.sh
+
+终端3 - Qwen3 (qwen3环境，GPU 2):
+   conda activate qwen3
+   cd VLMEvalKit
+   CUDA_VISIBLE_DEVICES=2 bash ../eval_qwen3_models.sh
+
+注意: 终端2和3都在qwen3环境中，可以顺序运行或使用不同GPU并行运行
+
+================================================================================
+⏱️  预计时间
+================================================================================
+
+LongVA (3个模型 × 9个数据集):      5-10 小时
+InternVL (1个模型 × 9个数据集):    2-4 小时
+Qwen3 (1个模型 × 9个数据集):       2-4 小时
+
+================================================================================
+📊 结果位置
+================================================================================
+
+VLMEvalKit/
+├── longva_results_YYYYMMDD_HHMMSS/
+│   ├── LongVA-Temporal-v1/
+│   ├── LongVA-Temporal-v2/
+│   └── LongVA-7B/
+├── internvl_results_YYYYMMDD_HHMMSS/
+│   └── InternVL3_5-8B/
+└── qwen3_results_YYYYMMDD_HHMMSS/
+    └── Qwen3-VL-8B-Instruct/
+
+查看结果:
+   find longva_results_* -name "*.csv"
+   find internvl_results_* -name "*.csv"
+   find qwen3_results_* -name "*.csv"
+
+比较所有5个模型:
+   cd VLMEvalKit
+   python ../compare_all_5_models.py
+
+================================================================================
+📋 9个评测 Benchmarks
+================================================================================
+
+1. MMBench_DEV_EN       - 多模态理解
+2. MME                  - 综合评估
+3. SEEDBench_IMG        - 图像理解
+4. HallusionBench       - 幻觉检测
+5. AI2D_TEST            - 图表理解
+6. OCRBench             - OCR能力
+7. MathVista_MINI       - 数学推理
+8. RealWorldQA          - 真实场景
+9. POPE                 - 物体感知
+
+================================================================================
+💡 推荐的评测流程
+================================================================================
+
+方案1: 顺序评测（稳定，单GPU）
+
+   # 1. 在默认环境评测 LongVA
+   cd VLMEvalKit
+   bash ../eval_longva_models.sh
+
+   # 2. 切换到 qwen3 环境评测 InternVL
+   conda activate qwen3
+   bash ../eval_internvl_models.sh
+
+   # 3. 继续在 qwen3 环境评测 Qwen3
+   bash ../eval_qwen3_models.sh
+
+方案2: 并行评测（快速，需要2-3个GPU）
+
+   终端1 (GPU 0):
+   cd VLMEvalKit
+   CUDA_VISIBLE_DEVICES=0 bash ../eval_longva_models.sh
+
+   终端2 (GPU 1, qwen3环境):
+   conda activate qwen3
+   cd VLMEvalKit
+   CUDA_VISIBLE_DEVICES=1 bash ../eval_internvl_models.sh
+
+   # 等待InternVL完成后，在同一终端继续评测Qwen3
+   CUDA_VISIBLE_DEVICES=1 bash ../eval_qwen3_models.sh
+
+方案3: InternVL和Qwen3顺序运行（qwen3环境，单GPU）
+
+   conda activate qwen3
+   cd VLMEvalKit
+
+   # 先评测 InternVL
+   bash ../eval_internvl_models.sh
+
+   # 等待完成后评测 Qwen3
+   bash ../eval_qwen3_models.sh
+
+================================================================================
+🔧 环境管理
+================================================================================
+
+检查当前环境:
+   echo $CONDA_DEFAULT_ENV
+
+切换环境:
+   conda activate qwen3      # InternVL 和 Qwen3 用这个
+   conda activate longva     # LongVA 用这个（或默认环境）
+
+查看已安装的环境:
+   conda env list
+
+================================================================================
+✅ 评测前检查清单
+================================================================================
+
+LongVA:
+   [ ] 已进入 VLMEvalKit 目录
+   [ ] OpenAI API key 已配置
+   [ ] 在默认/longva环境中
+
+InternVL:
+   [ ] 已切换到 qwen3 环境 (conda activate qwen3)
+   [ ] 验证环境: echo $CONDA_DEFAULT_ENV 应显示 qwen3
+   [ ] 已进入 VLMEvalKit 目录
+   [ ] OpenAI API key 已配置
+
+Qwen3:
+   [ ] 已切换到 qwen3 环境 (conda activate qwen3)
+   [ ] 验证环境: echo $CONDA_DEFAULT_ENV 应显示 qwen3
+   [ ] 已进入 VLMEvalKit 目录
+   [ ] OpenAI API key 已配置
+
+================================================================================
+🎯 快速开始命令
+================================================================================
+
+# LongVA
+cd VLMEvalKit
+bash ../eval_longva_models.sh
+
+# InternVL (记得切换环境！)
+conda activate qwen3
+cd VLMEvalKit
+bash ../eval_internvl_models.sh
+
+# Qwen3 (继续在qwen3环境中)
+bash ../eval_qwen3_models.sh
+
+# 比较所有结果
+python ../compare_all_5_models.py
+
+================================================================================
+📖 更多信息
+================================================================================
+
+查看快速参考: cat RUN_EVAL_FINAL.txt
+环境问题排查: 确保 conda activate qwen3 成功执行
+
+================================================================================
